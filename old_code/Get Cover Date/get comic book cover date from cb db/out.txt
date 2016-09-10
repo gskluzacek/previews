@@ -1,0 +1,3645 @@
+Processing with internet source of: Comic Book db...
+
+Execution ID: 70
+
+$series_arr content:
+
+series count 2
+
+Array
+(
+    [0] => Array
+        (
+            [issi_series_id] => 39208
+            [ser_id] => 36
+            [ser_name] => Uncanny X-Force
+            [ser_year] => 2013
+            [cii_series] => Uncanny X-Force, Vol. 2
+        )
+
+    [1] => Array
+        (
+            [issi_series_id] => 593
+            [ser_id] => 99
+            [ser_name] => X-Men
+            [ser_year] => 2015
+            [cii_series] => X-Men, Vol. 1
+        )
+
+)
+
+
+----------------------
+
+
+
+----------------------
+
+Array
+(
+    [issi_series_id] => 39208
+    [ser_id] => 36
+    [ser_name] => Uncanny X-Force
+    [ser_year] => 2013
+    [cii_series] => Uncanny X-Force, Vol. 2
+)
+number of issues in Uncanny X-Force (2013): 31
+
+Array
+(
+    [isi_issue_id] => 294582
+    [isi_issue_type] => NV
+    [isi_issue_num] => 17
+    [isi_issue_name] => 
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Mar-2014
+    [isi_cover_dt] => 2014-03-01
+    [isi_story_arc_id] => 5521
+    [isi_story_arc_name] => Vendetta
+)
+Array
+(
+    [isi_issue_id] => 293519
+    [isi_issue_type] => NV
+    [isi_issue_num] => 16
+    [isi_issue_name] => 
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Mar-2014
+    [isi_cover_dt] => 2014-03-01
+    [isi_story_arc_id] => 5521
+    [isi_story_arc_name] => Vendetta
+)
+Array
+(
+    [isi_issue_id] => 291559
+    [isi_issue_type] => NV
+    [isi_issue_num] => 15
+    [isi_issue_name] => 
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Feb-2014
+    [isi_cover_dt] => 2014-02-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 290087
+    [isi_issue_type] => NV
+    [isi_issue_num] => 14
+    [isi_issue_name] => 
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Jan-2014
+    [isi_cover_dt] => 2014-01-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 287904
+    [isi_issue_type] => NV
+    [isi_issue_num] => 13
+    [isi_issue_name] => 
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Dec-2013
+    [isi_cover_dt] => 2013-12-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 285925
+    [isi_issue_type] => NV
+    [isi_issue_num] => 12
+    [isi_issue_name] => 
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Dec-2013
+    [isi_cover_dt] => 2013-12-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 285926
+    [isi_issue_type] => VAR
+    [isi_issue_num] => 12
+    [isi_issue_name] => 
+    [isi_variant_seq] => 2
+    [isi_variant_desc] => Noto X-Men 50th Anniversary Variant
+    [isi_cover_dt_disp] => Dec-2013
+    [isi_cover_dt] => 2013-12-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 283149
+    [isi_issue_type] => NV
+    [isi_issue_num] => 11
+    [isi_issue_name] => 
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Nov-2013
+    [isi_cover_dt] => 2013-11-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 283150
+    [isi_issue_type] => VAR
+    [isi_issue_num] => 11
+    [isi_issue_name] => 
+    [isi_variant_seq] => 2
+    [isi_variant_desc] => X-Men 50th Anniversary Variant
+    [isi_cover_dt_disp] => Nov-2013
+    [isi_cover_dt] => 2013-11-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 280794
+    [isi_issue_type] => NV
+    [isi_issue_num] => 10
+    [isi_issue_name] => 
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Oct-2013
+    [isi_cover_dt] => 2013-10-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 279367
+    [isi_issue_type] => NV
+    [isi_issue_num] => 9
+    [isi_issue_name] => 
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Sep-2013
+    [isi_cover_dt] => 2013-09-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 278012
+    [isi_issue_type] => NV
+    [isi_issue_num] => 8
+    [isi_issue_name] => 
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Sep-2013
+    [isi_cover_dt] => 2013-09-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 275784
+    [isi_issue_type] => NV
+    [isi_issue_num] => 7
+    [isi_issue_name] => 
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Aug-2013
+    [isi_cover_dt] => 2013-08-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 274580
+    [isi_issue_type] => NV
+    [isi_issue_num] => 6
+    [isi_issue_name] => 
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Aug-2013
+    [isi_cover_dt] => 2013-08-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 274924
+    [isi_issue_type] => VAR
+    [isi_issue_num] => 6
+    [isi_issue_name] => 
+    [isi_variant_seq] => 2
+    [isi_variant_desc] => Pagulayan Variant
+    [isi_cover_dt_disp] => Aug-2013
+    [isi_cover_dt] => 2013-08-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 273531
+    [isi_issue_type] => NV
+    [isi_issue_num] => 5
+    [isi_issue_name] => Shine A Light
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Jul-2013
+    [isi_cover_dt] => 2013-07-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 273532
+    [isi_issue_type] => VAR
+    [isi_issue_num] => 5
+    [isi_issue_name] => Shine A Light
+    [isi_variant_seq] => 2
+    [isi_variant_desc] => Manara Variant
+    [isi_cover_dt_disp] => Jul-2013
+    [isi_cover_dt] => 2013-07-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 272267
+    [isi_issue_type] => NV
+    [isi_issue_num] => 4
+    [isi_issue_name] => Street Fighting Man
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Jul-2013
+    [isi_cover_dt] => 2013-07-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 272439
+    [isi_issue_type] => VAR
+    [isi_issue_num] => 4
+    [isi_issue_name] => Street Fighting Man
+    [isi_variant_seq] => 2
+    [isi_variant_desc] => Camuncoli Variant
+    [isi_cover_dt_disp] => Jul-2013
+    [isi_cover_dt] => 2013-07-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 269784
+    [isi_issue_type] => NV
+    [isi_issue_num] => 3
+    [isi_issue_name] => Sweet Virginia
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => May-2013
+    [isi_cover_dt] => 2013-05-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 270030
+    [isi_issue_type] => VAR
+    [isi_issue_num] => 3
+    [isi_issue_name] => Sweet Virginia
+    [isi_variant_seq] => 2
+    [isi_variant_desc] => Larroca Variant
+    [isi_cover_dt_disp] => May-2013
+    [isi_cover_dt] => 2013-05-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 267770
+    [isi_issue_type] => NV
+    [isi_issue_num] => 2
+    [isi_issue_name] => Gimme Shelter
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Apr-2013
+    [isi_cover_dt] => 2013-04-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 267771
+    [isi_issue_type] => VAR
+    [isi_issue_num] => 2
+    [isi_issue_name] => Gimme Shelter
+    [isi_variant_seq] => 2
+    [isi_variant_desc] => McGuinness Variant
+    [isi_cover_dt_disp] => Apr-2013
+    [isi_cover_dt] => 2013-04-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 265182
+    [isi_issue_type] => NV
+    [isi_issue_num] => 1
+    [isi_issue_name] => Let It Bleed
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Mar-2013
+    [isi_cover_dt] => 2013-03-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 265183
+    [isi_issue_type] => VAR
+    [isi_issue_num] => 1
+    [isi_issue_name] => Let It Bleed
+    [isi_variant_seq] => 2
+    [isi_variant_desc] => Baby Variant
+    [isi_cover_dt_disp] => Mar-2013
+    [isi_cover_dt] => 2013-03-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 265477
+    [isi_issue_type] => VAR
+    [isi_issue_num] => 1
+    [isi_issue_name] => Let It Bleed
+    [isi_variant_seq] => 3
+    [isi_variant_desc] => Blank Variant
+    [isi_cover_dt_disp] => Mar-2013
+    [isi_cover_dt] => 2013-03-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 265476
+    [isi_issue_type] => VAR
+    [isi_issue_num] => 1
+    [isi_issue_name] => Let It Bleed
+    [isi_variant_seq] => 4
+    [isi_variant_desc] => Design Variant
+    [isi_cover_dt_disp] => Mar-2013
+    [isi_cover_dt] => 2013-03-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 265470
+    [isi_issue_type] => VAR
+    [isi_issue_num] => 1
+    [isi_issue_name] => Let It Bleed
+    [isi_variant_seq] => 5
+    [isi_variant_desc] => Garney variant
+    [isi_cover_dt_disp] => Mar-2013
+    [isi_cover_dt] => 2013-03-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 300684
+    [isi_issue_type] => NV
+    [isi_issue_num] => TPB vol. 03
+    [isi_issue_name] => The Great Corruption
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => 2014
+    [isi_cover_dt] => 2014-01-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 290755
+    [isi_issue_type] => NV
+    [isi_issue_num] => TPB vol. 02
+    [isi_issue_name] => Torn And Frayed
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => 2013
+    [isi_cover_dt] => 2013-01-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 280321
+    [isi_issue_type] => NV
+    [isi_issue_num] => TPB vol. 01
+    [isi_issue_name] => Let It Bleed
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Jul-2013
+    [isi_cover_dt] => 2013-07-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [issi_series_id] => 593
+    [ser_id] => 99
+    [ser_name] => X-Men
+    [ser_year] => 2015
+    [cii_series] => X-Men, Vol. 1
+)
+number of issues in X-Men (2015): 242
+
+Array
+(
+    [isi_issue_id] => 117729
+    [isi_issue_type] => NV
+    [isi_issue_num] => 207
+    [isi_issue_name] => Messiah CompleX: Chapter 13
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Mar-2008
+    [isi_cover_dt] => 2008-03-01
+    [isi_story_arc_id] => 2405
+    [isi_story_arc_name] => Messiah CompleX
+)
+Array
+(
+    [isi_issue_id] => 117809
+    [isi_issue_type] => VAR
+    [isi_issue_num] => 207
+    [isi_issue_name] => Messiah CompleX: Chapter 13
+    [isi_variant_seq] => 2
+    [isi_variant_desc] => Jim Cheung variant
+    [isi_cover_dt_disp] => Mar-2008
+    [isi_cover_dt] => 2008-03-01
+    [isi_story_arc_id] => 2405
+    [isi_story_arc_name] => Messiah CompleX
+)
+Array
+(
+    [isi_issue_id] => 115401
+    [isi_issue_type] => NV
+    [isi_issue_num] => 206
+    [isi_issue_name] => Messiah CompleX: Chapter 9
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Feb-2008
+    [isi_cover_dt] => 2008-02-01
+    [isi_story_arc_id] => 2405
+    [isi_story_arc_name] => Messiah CompleX
+)
+Array
+(
+    [isi_issue_id] => 115798
+    [isi_issue_type] => VAR
+    [isi_issue_num] => 206
+    [isi_issue_name] => Messiah CompleX: Chapter 9
+    [isi_variant_seq] => 2
+    [isi_variant_desc] => Simone Bianchi Variant
+    [isi_cover_dt_disp] => Feb-2008
+    [isi_cover_dt] => 2008-02-01
+    [isi_story_arc_id] => 2405
+    [isi_story_arc_name] => Messiah CompleX
+)
+Array
+(
+    [isi_issue_id] => 113785
+    [isi_issue_type] => NV
+    [isi_issue_num] => 205
+    [isi_issue_name] => Messiah CompleX: Chapter 5
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Jan-2008
+    [isi_cover_dt] => 2008-01-01
+    [isi_story_arc_id] => 2405
+    [isi_story_arc_name] => Messiah CompleX
+)
+Array
+(
+    [isi_issue_id] => 117396
+    [isi_issue_type] => VAR
+    [isi_issue_num] => 205
+    [isi_issue_name] => Messiah CompleX: Chapter 5
+    [isi_variant_seq] => 2
+    [isi_variant_desc] => 2nd print
+    [isi_cover_dt_disp] => Jan-2008
+    [isi_cover_dt] => 2008-01-01
+    [isi_story_arc_id] => 2405
+    [isi_story_arc_name] => Messiah CompleX
+)
+Array
+(
+    [isi_issue_id] => 113788
+    [isi_issue_type] => VAR
+    [isi_issue_num] => 205
+    [isi_issue_name] => Messiah CompleX: Chapter 5
+    [isi_variant_seq] => 3
+    [isi_variant_desc] => J. Scott Campbell Variant
+    [isi_cover_dt_disp] => Jan-2008
+    [isi_cover_dt] => 2008-01-01
+    [isi_story_arc_id] => 2405
+    [isi_story_arc_name] => Messiah CompleX
+)
+Array
+(
+    [isi_issue_id] => 109260
+    [isi_issue_type] => NV
+    [isi_issue_num] => 204
+    [isi_issue_name] => 
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Dec-2007
+    [isi_cover_dt] => 2007-12-01
+    [isi_story_arc_id] => 2229
+    [isi_story_arc_name] => Endangered Species (X-Men...
+)
+Array
+(
+    [isi_issue_id] => 106323
+    [isi_issue_type] => NV
+    [isi_issue_num] => 203
+    [isi_issue_name] => Blinded by the Light: Chapter 4
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Nov-2007
+    [isi_cover_dt] => 2007-11-01
+    [isi_story_arc_id] => 2229
+    [isi_story_arc_name] => Endangered Species (X-Men...
+)
+Array
+(
+    [isi_issue_id] => 103291
+    [isi_issue_type] => NV
+    [isi_issue_num] => 202
+    [isi_issue_name] => Blinded by the Light: Chapter 3
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Oct-2007
+    [isi_cover_dt] => 2007-10-01
+    [isi_story_arc_id] => 2243
+    [isi_story_arc_name] => Blinded By the Light
+)
+Array
+(
+    [isi_issue_id] => 100045
+    [isi_issue_type] => NV
+    [isi_issue_num] => 201
+    [isi_issue_name] => Blinded by the Light: Chapter 2
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Sep-2007
+    [isi_cover_dt] => 2007-09-01
+    [isi_story_arc_id] => 2229
+    [isi_story_arc_name] => Endangered Species (X-Men...
+)
+Array
+(
+    [isi_issue_id] => 97440
+    [isi_issue_type] => NV
+    [isi_issue_num] => 200
+    [isi_issue_name] => Blinded by the Light: Chapter 1
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Aug-2007
+    [isi_cover_dt] => 2007-08-01
+    [isi_story_arc_id] => 2229
+    [isi_story_arc_name] => Endangered Species (X-Men...
+)
+Array
+(
+    [isi_issue_id] => 101898
+    [isi_issue_type] => VAR
+    [isi_issue_num] => 200
+    [isi_issue_name] => Blinded by the Light: Chapter 1
+    [isi_variant_seq] => 2
+    [isi_variant_desc] => 2nd Printing
+    [isi_cover_dt_disp] => Aug-2007
+    [isi_cover_dt] => 2007-08-01
+    [isi_story_arc_id] => 2229
+    [isi_story_arc_name] => Endangered Species (X-Men...
+)
+Array
+(
+    [isi_issue_id] => 97443
+    [isi_issue_type] => VAR
+    [isi_issue_num] => 200
+    [isi_issue_name] => Blinded by the Light: Chapter 1
+    [isi_variant_seq] => 3
+    [isi_variant_desc] => David Finch Gatefold Variant
+    [isi_cover_dt_disp] => Aug-2007
+    [isi_cover_dt] => 2007-08-01
+    [isi_story_arc_id] => 2229
+    [isi_story_arc_name] => Endangered Species (X-Men...
+)
+Array
+(
+    [isi_issue_id] => 97442
+    [isi_issue_type] => VAR
+    [isi_issue_num] => 200
+    [isi_issue_name] => Blinded by the Light: Chapter 1
+    [isi_variant_seq] => 4
+    [isi_variant_desc] => Humberto Ramos 50/50 Variant
+    [isi_cover_dt_disp] => Aug-2007
+    [isi_cover_dt] => 2007-08-01
+    [isi_story_arc_id] => 2229
+    [isi_story_arc_name] => Endangered Species (X-Men...
+)
+Array
+(
+    [isi_issue_id] => 94590
+    [isi_issue_type] => NV
+    [isi_issue_num] => 199
+    [isi_issue_name] => Condition Critical: Part 3
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Jul-2007
+    [isi_cover_dt] => 2007-07-01
+    [isi_story_arc_id] => 2117
+    [isi_story_arc_name] => Red Data
+)
+Array
+(
+    [isi_issue_id] => 90984
+    [isi_issue_type] => NV
+    [isi_issue_num] => 198
+    [isi_issue_name] => Condition Critical: Part 2
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Jun-2007
+    [isi_cover_dt] => 2007-06-01
+    [isi_story_arc_id] => 2117
+    [isi_story_arc_name] => Red Data
+)
+Array
+(
+    [isi_issue_id] => 88555
+    [isi_issue_type] => NV
+    [isi_issue_num] => 197
+    [isi_issue_name] => Condition Critical: Part 1
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => May-2007
+    [isi_cover_dt] => 2007-05-01
+    [isi_story_arc_id] => 2117
+    [isi_story_arc_name] => Red Data
+)
+Array
+(
+    [isi_issue_id] => 86436
+    [isi_issue_type] => NV
+    [isi_issue_num] => 196
+    [isi_issue_name] => Primary Infection: Part 3
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Apr-2007
+    [isi_cover_dt] => 2007-04-01
+    [isi_story_arc_id] => 1881
+    [isi_story_arc_name] => Primary Infection
+)
+Array
+(
+    [isi_issue_id] => 83453
+    [isi_issue_type] => NV
+    [isi_issue_num] => 195
+    [isi_issue_name] => Primary Infection: Part 2
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Mar-2007
+    [isi_cover_dt] => 2007-03-01
+    [isi_story_arc_id] => 1881
+    [isi_story_arc_name] => Primary Infection
+)
+Array
+(
+    [isi_issue_id] => 77270
+    [isi_issue_type] => NV
+    [isi_issue_num] => 194
+    [isi_issue_name] => Primary Infection: Part 1
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Feb-2007
+    [isi_cover_dt] => 2007-02-01
+    [isi_story_arc_id] => 1881
+    [isi_story_arc_name] => Primary Infection
+)
+Array
+(
+    [isi_issue_id] => 73217
+    [isi_issue_type] => NV
+    [isi_issue_num] => 193
+    [isi_issue_name] => Supernovas: Chapter 6
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Jan-2007
+    [isi_cover_dt] => 2007-01-01
+    [isi_story_arc_id] => 1670
+    [isi_story_arc_name] => Supernovas
+)
+Array
+(
+    [isi_issue_id] => 68094
+    [isi_issue_type] => NV
+    [isi_issue_num] => 192
+    [isi_issue_name] => Supernovas: Chapter 5
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Dec-2006
+    [isi_cover_dt] => 2006-12-01
+    [isi_story_arc_id] => 1670
+    [isi_story_arc_name] => Supernovas
+)
+Array
+(
+    [isi_issue_id] => 64593
+    [isi_issue_type] => NV
+    [isi_issue_num] => 191
+    [isi_issue_name] => Supernovas: Chapter 4
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Nov-2006
+    [isi_cover_dt] => 2006-11-01
+    [isi_story_arc_id] => 1670
+    [isi_story_arc_name] => Supernovas
+)
+Array
+(
+    [isi_issue_id] => 60782
+    [isi_issue_type] => NV
+    [isi_issue_num] => 190
+    [isi_issue_name] => Supernovas: Chapter 3
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Oct-2006
+    [isi_cover_dt] => 2006-10-01
+    [isi_story_arc_id] => 1670
+    [isi_story_arc_name] => Supernovas
+)
+Array
+(
+    [isi_issue_id] => 53676
+    [isi_issue_type] => NV
+    [isi_issue_num] => 189
+    [isi_issue_name] => Supernovas: Chapter 2
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Sep-2006
+    [isi_cover_dt] => 2006-09-01
+    [isi_story_arc_id] => 1670
+    [isi_story_arc_name] => Supernovas
+)
+Array
+(
+    [isi_issue_id] => 51001
+    [isi_issue_type] => NV
+    [isi_issue_num] => 188
+    [isi_issue_name] => Supernovas: Chapter 1
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Sep-2006
+    [isi_cover_dt] => 2006-09-01
+    [isi_story_arc_id] => 1670
+    [isi_story_arc_name] => Supernovas
+)
+Array
+(
+    [isi_issue_id] => 77478
+    [isi_issue_type] => VAR
+    [isi_issue_num] => 188
+    [isi_issue_name] => Supernovas: Chapter 1
+    [isi_variant_seq] => 2
+    [isi_variant_desc] => Variant Sketch Cover
+    [isi_cover_dt_disp] => Sep-2006
+    [isi_cover_dt] => 2006-09-01
+    [isi_story_arc_id] => 1670
+    [isi_story_arc_name] => Supernovas
+)
+Array
+(
+    [isi_issue_id] => 47396
+    [isi_issue_type] => NV
+    [isi_issue_num] => 187
+    [isi_issue_name] => The Blood of Apocalypse, Epilogue: The Future
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Aug-2006
+    [isi_cover_dt] => 2006-08-01
+    [isi_story_arc_id] => 1223
+    [isi_story_arc_name] => The Blood of Apocalypse
+)
+Array
+(
+    [isi_issue_id] => 41553
+    [isi_issue_type] => NV
+    [isi_issue_num] => 186
+    [isi_issue_name] => The Blood of Apocalypse, Part 5: The Battle of the East Rive...
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Jul-2006
+    [isi_cover_dt] => 2006-07-01
+    [isi_story_arc_id] => 1223
+    [isi_story_arc_name] => The Blood of Apocalypse
+)
+Array
+(
+    [isi_issue_id] => 37300
+    [isi_issue_type] => NV
+    [isi_issue_num] => 185
+    [isi_issue_name] => The Blood of Apocalypse, Part 4: Love and Death
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Jun-2006
+    [isi_cover_dt] => 2006-06-01
+    [isi_story_arc_id] => 1223
+    [isi_story_arc_name] => The Blood of Apocalypse
+)
+Array
+(
+    [isi_issue_id] => 33651
+    [isi_issue_type] => NV
+    [isi_issue_num] => 184
+    [isi_issue_name] => The Blood of Apocalypse, Part 3:  War--What is it Good For?
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => May-2006
+    [isi_cover_dt] => 2006-05-01
+    [isi_story_arc_id] => 1223
+    [isi_story_arc_name] => The Blood of Apocalypse
+)
+Array
+(
+    [isi_issue_id] => 30061
+    [isi_issue_type] => NV
+    [isi_issue_num] => 183
+    [isi_issue_name] => The Blood of Apocalypse, Part 2: The Hunger
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Apr-2006
+    [isi_cover_dt] => 2006-04-01
+    [isi_story_arc_id] => 1223
+    [isi_story_arc_name] => The Blood of Apocalypse
+)
+Array
+(
+    [isi_issue_id] => 28240
+    [isi_issue_type] => NV
+    [isi_issue_num] => 182
+    [isi_issue_name] => The Blood of Apocalypse, Part 1: The Messiah
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Apr-2006
+    [isi_cover_dt] => 2006-04-01
+    [isi_story_arc_id] => 1223
+    [isi_story_arc_name] => The Blood of Apocalypse
+)
+Array
+(
+    [isi_issue_id] => 26885
+    [isi_issue_type] => NV
+    [isi_issue_num] => 181
+    [isi_issue_name] => What Lorna Saw, Part 2: The Leper Queen
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Mar-2006
+    [isi_cover_dt] => 2006-03-01
+    [isi_story_arc_id] => 1761
+    [isi_story_arc_name] => What Lorna Saw
+)
+Array
+(
+    [isi_issue_id] => 22316
+    [isi_issue_type] => NV
+    [isi_issue_num] => 180
+    [isi_issue_name] => What Lorna Saw, Part 1: Sign of the Times
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Feb-2006
+    [isi_cover_dt] => 2006-02-01
+    [isi_story_arc_id] => 1761
+    [isi_story_arc_name] => What Lorna Saw
+)
+Array
+(
+    [isi_issue_id] => 17677
+    [isi_issue_type] => NV
+    [isi_issue_num] => 179
+    [isi_issue_name] => House Arrest Part 3: Togetherness
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Feb-2006
+    [isi_cover_dt] => 2006-02-01
+    [isi_story_arc_id] => 531
+    [isi_story_arc_name] => House Arrest
+)
+Array
+(
+    [isi_issue_id] => 14372
+    [isi_issue_type] => NV
+    [isi_issue_num] => 178
+    [isi_issue_name] => House Arrest, Part 2: The Transmogrification of Robert Drake
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Jan-2006
+    [isi_cover_dt] => 2006-01-01
+    [isi_story_arc_id] => 331
+    [isi_story_arc_name] => Decimation
+)
+Array
+(
+    [isi_issue_id] => 13231
+    [isi_issue_type] => NV
+    [isi_issue_num] => 177
+    [isi_issue_name] => House Arrest, Part 1: Losing It
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Jan-2006
+    [isi_cover_dt] => 2006-01-01
+    [isi_story_arc_id] => 531
+    [isi_story_arc_name] => House Arrest
+)
+Array
+(
+    [isi_issue_id] => 10389
+    [isi_issue_type] => NV
+    [isi_issue_num] => 176
+    [isi_issue_name] => Wild Kingdom: Part 3
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Dec-2005
+    [isi_cover_dt] => 2005-12-01
+    [isi_story_arc_id] => 237
+    [isi_story_arc_name] => Wild Kingdom
+)
+Array
+(
+    [isi_issue_id] => 5169
+    [isi_issue_type] => NV
+    [isi_issue_num] => 175
+    [isi_issue_name] => Wild Kingdom: Part 1
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Nov-2005
+    [isi_cover_dt] => 2005-11-01
+    [isi_story_arc_id] => 237
+    [isi_story_arc_name] => Wild Kingdom
+)
+Array
+(
+    [isi_issue_id] => 134819
+    [isi_issue_type] => VAR
+    [isi_issue_num] => 175
+    [isi_issue_name] => Wild Kingdom: Part 1
+    [isi_variant_seq] => 2
+    [isi_variant_desc] => Wizard World Boston Sketch Variant Cover
+    [isi_cover_dt_disp] => Nov-2005
+    [isi_cover_dt] => 2005-11-01
+    [isi_story_arc_id] => 237
+    [isi_story_arc_name] => Wild Kingdom
+)
+Array
+(
+    [isi_issue_id] => 5168
+    [isi_issue_type] => NV
+    [isi_issue_num] => 174
+    [isi_issue_name] => Election Day
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Oct-2005
+    [isi_cover_dt] => 2005-10-01
+    [isi_story_arc_id] => 236
+    [isi_story_arc_name] => Bizarre Love Triangle
+)
+Array
+(
+    [isi_issue_id] => 5167
+    [isi_issue_type] => NV
+    [isi_issue_num] => 173
+    [isi_issue_name] => The Foxx in the Attic
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Sep-2005
+    [isi_cover_dt] => 2005-09-01
+    [isi_story_arc_id] => 236
+    [isi_story_arc_name] => Bizarre Love Triangle
+)
+Array
+(
+    [isi_issue_id] => 5166
+    [isi_issue_type] => NV
+    [isi_issue_num] => 172
+    [isi_issue_name] => Temptation
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Aug-2005
+    [isi_cover_dt] => 2005-08-01
+    [isi_story_arc_id] => 236
+    [isi_story_arc_name] => Bizarre Love Triangle
+)
+Array
+(
+    [isi_issue_id] => 5165
+    [isi_issue_type] => NV
+    [isi_issue_num] => 171
+    [isi_issue_name] => Dangerous Liaisons
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Aug-2005
+    [isi_cover_dt] => 2005-08-01
+    [isi_story_arc_id] => 236
+    [isi_story_arc_name] => Bizarre Love Triangle
+)
+Array
+(
+    [isi_issue_id] => 5164
+    [isi_issue_type] => NV
+    [isi_issue_num] => 170
+    [isi_issue_name] => Fall-out
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Jul-2005
+    [isi_cover_dt] => 2005-07-01
+    [isi_story_arc_id] => 235
+    [isi_story_arc_name] => Golgotha
+)
+Array
+(
+    [isi_issue_id] => 5163
+    [isi_issue_type] => NV
+    [isi_issue_num] => 169
+    [isi_issue_name] => Quarantine
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Jun-2005
+    [isi_cover_dt] => 2005-06-01
+    [isi_story_arc_id] => 235
+    [isi_story_arc_name] => Golgotha
+)
+Array
+(
+    [isi_issue_id] => 5162
+    [isi_issue_type] => NV
+    [isi_issue_num] => 168
+    [isi_issue_name] => The Crazy Gang
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => May-2005
+    [isi_cover_dt] => 2005-05-01
+    [isi_story_arc_id] => 235
+    [isi_story_arc_name] => Golgotha
+)
+Array
+(
+    [isi_issue_id] => 5161
+    [isi_issue_type] => NV
+    [isi_issue_num] => 167
+    [isi_issue_name] => The Night of the Mutant
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Apr-2005
+    [isi_cover_dt] => 2005-04-01
+    [isi_story_arc_id] => 235
+    [isi_story_arc_name] => Golgotha
+)
+Array
+(
+    [isi_issue_id] => 5160
+    [isi_issue_type] => NV
+    [isi_issue_num] => 166
+    [isi_issue_name] => And What Dark Beast...
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Mar-2005
+    [isi_cover_dt] => 2005-03-01
+    [isi_story_arc_id] => 235
+    [isi_story_arc_name] => Golgotha
+)
+Array
+(
+    [isi_issue_id] => 5159
+    [isi_issue_type] => NV
+    [isi_issue_num] => 165
+    [isi_issue_name] => Hark How the Bells--!
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Feb-2005
+    [isi_cover_dt] => 2005-02-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 5158
+    [isi_issue_type] => NV
+    [isi_issue_num] => 164
+    [isi_issue_name] => Heroes and Villains: Part 4: Full Circle
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Jan-2005
+    [isi_cover_dt] => 2005-01-01
+    [isi_story_arc_id] => 234
+    [isi_story_arc_name] => Heroes and Villains
+)
+Array
+(
+    [isi_issue_id] => 5157
+    [isi_issue_type] => NV
+    [isi_issue_num] => 163
+    [isi_issue_name] => Heroes and Villains: Part 3: Foreshadowing
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Dec-2004
+    [isi_cover_dt] => 2004-12-01
+    [isi_story_arc_id] => 234
+    [isi_story_arc_name] => Heroes and Villains
+)
+Array
+(
+    [isi_issue_id] => 5156
+    [isi_issue_type] => NV
+    [isi_issue_num] => 162
+    [isi_issue_name] => Heroes and Villains: Part 2: Treachery
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Nov-2004
+    [isi_cover_dt] => 2004-11-01
+    [isi_story_arc_id] => 234
+    [isi_story_arc_name] => Heroes and Villains
+)
+Array
+(
+    [isi_issue_id] => 5155
+    [isi_issue_type] => NV
+    [isi_issue_num] => 161
+    [isi_issue_name] => Heroes and Villains: Part 1
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Nov-2004
+    [isi_cover_dt] => 2004-11-01
+    [isi_story_arc_id] => 234
+    [isi_story_arc_name] => Heroes and Villains
+)
+Array
+(
+    [isi_issue_id] => 5152
+    [isi_issue_type] => NV
+    [isi_issue_num] => 160
+    [isi_issue_name] => Day of the Atom, Part 4: Forces of Nature
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Oct-2004
+    [isi_cover_dt] => 2004-10-01
+    [isi_story_arc_id] => 233
+    [isi_story_arc_name] => Day of the Atom
+)
+Array
+(
+    [isi_issue_id] => 5151
+    [isi_issue_type] => NV
+    [isi_issue_num] => 159
+    [isi_issue_name] => Day of the Atom, Part 3
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Sep-2004
+    [isi_cover_dt] => 2004-09-01
+    [isi_story_arc_id] => 233
+    [isi_story_arc_name] => Day of the Atom
+)
+Array
+(
+    [isi_issue_id] => 5150
+    [isi_issue_type] => NV
+    [isi_issue_num] => 158
+    [isi_issue_name] => Day of the Atom, Part 2: Immortals
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Aug-2004
+    [isi_cover_dt] => 2004-08-01
+    [isi_story_arc_id] => 233
+    [isi_story_arc_name] => Day of the Atom
+)
+Array
+(
+    [isi_issue_id] => 5149
+    [isi_issue_type] => NV
+    [isi_issue_num] => 157
+    [isi_issue_name] => Day of the Atom, Part 1: Black Holes
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Jul-2004
+    [isi_cover_dt] => 2004-07-01
+    [isi_story_arc_id] => 4525
+    [isi_story_arc_name] => X-Men ReLoad
+)
+Array
+(
+    [isi_issue_id] => 4239
+    [isi_issue_type] => NV
+    [isi_issue_num] => 113
+    [isi_issue_name] => Eve of Destruction: Conclusion
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Jun-2001
+    [isi_cover_dt] => 2001-06-01
+    [isi_story_arc_id] => 141
+    [isi_story_arc_name] => Eve of Destruction (X-Men...
+)
+Array
+(
+    [isi_issue_id] => 4238
+    [isi_issue_type] => NV
+    [isi_issue_num] => 112
+    [isi_issue_name] => Eve of Destruction: Part 2: A Call to Arms
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => May-2001
+    [isi_cover_dt] => 2001-05-01
+    [isi_story_arc_id] => 141
+    [isi_story_arc_name] => Eve of Destruction (X-Men...
+)
+Array
+(
+    [isi_issue_id] => 4237
+    [isi_issue_type] => NV
+    [isi_issue_num] => 111
+    [isi_issue_name] => Eve of Destruction: Prelude
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Apr-2001
+    [isi_cover_dt] => 2001-04-01
+    [isi_story_arc_id] => 141
+    [isi_story_arc_name] => Eve of Destruction (X-Men...
+)
+Array
+(
+    [isi_issue_id] => 4236
+    [isi_issue_type] => NV
+    [isi_issue_num] => 110
+    [isi_issue_name] => One Tin Soldier Rides Away...
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Mar-2001
+    [isi_cover_dt] => 2001-03-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 4235
+    [isi_issue_type] => NV
+    [isi_issue_num] => 109
+    [isi_issue_name] => Ceremonies
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Feb-2001
+    [isi_cover_dt] => 2001-02-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 4234
+    [isi_issue_type] => NV
+    [isi_issue_num] => 108
+    [isi_issue_name] => The Future is Now!
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Jan-2001
+    [isi_cover_dt] => 2001-01-01
+    [isi_story_arc_id] => 136
+    [isi_story_arc_name] => Dream's End (2001)
+)
+Array
+(
+    [isi_issue_id] => 4233
+    [isi_issue_type] => NV
+    [isi_issue_num] => 107
+    [isi_issue_name] => On the Yard!
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Dec-2000
+    [isi_cover_dt] => 2000-12-01
+    [isi_story_arc_id] => 42
+    [isi_story_arc_name] => Maximum Security
+)
+Array
+(
+    [isi_issue_id] => 4232
+    [isi_issue_type] => NV
+    [isi_issue_num] => 106
+    [isi_issue_name] => Search and Rescue Chapter One
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Nov-2000
+    [isi_cover_dt] => 2000-11-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 4231
+    [isi_issue_type] => NV
+    [isi_issue_num] => 105
+    [isi_issue_name] => Killing Angels!
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Oct-2000
+    [isi_cover_dt] => 2000-10-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 4230
+    [isi_issue_type] => NV
+    [isi_issue_num] => 104
+    [isi_issue_name] => Painted Ladies
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Sep-2000
+    [isi_cover_dt] => 2000-09-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 4229
+    [isi_issue_type] => NV
+    [isi_issue_num] => 103
+    [isi_issue_name] => The Goth
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Aug-2000
+    [isi_cover_dt] => 2000-08-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 4228
+    [isi_issue_type] => NV
+    [isi_issue_num] => 102
+    [isi_issue_name] => The Cruelest Cut
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Jul-2000
+    [isi_cover_dt] => 2000-07-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 4225
+    [isi_issue_type] => NV
+    [isi_issue_num] => 101
+    [isi_issue_name] => Hard Landing
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Jun-2000
+    [isi_cover_dt] => 2000-06-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 4223
+    [isi_issue_type] => NV
+    [isi_issue_num] => 100
+    [isi_issue_name] => End of Days
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => May-2000
+    [isi_cover_dt] => 2000-05-01
+    [isi_story_arc_id] => 816
+    [isi_story_arc_name] => Revolution (X-Men)
+)
+Array
+(
+    [isi_issue_id] => 75579
+    [isi_issue_type] => VAR
+    [isi_issue_num] => 100
+    [isi_issue_name] => End of Days
+    [isi_variant_seq] => 2
+    [isi_variant_desc] => Dave Cockrum Cover
+    [isi_cover_dt_disp] => May-2000
+    [isi_cover_dt] => 2000-05-01
+    [isi_story_arc_id] => 816
+    [isi_story_arc_name] => Revolution (X-Men)
+)
+Array
+(
+    [isi_issue_id] => 75586
+    [isi_issue_type] => VAR
+    [isi_issue_num] => 100
+    [isi_issue_name] => End of Days
+    [isi_variant_seq] => 3
+    [isi_variant_desc] => Dynamic Forces Chromium Variant
+    [isi_cover_dt_disp] => May-2000
+    [isi_cover_dt] => 2000-05-01
+    [isi_story_arc_id] => 816
+    [isi_story_arc_name] => Revolution (X-Men)
+)
+Array
+(
+    [isi_issue_id] => 75584
+    [isi_issue_type] => VAR
+    [isi_issue_num] => 100
+    [isi_issue_name] => End of Days
+    [isi_variant_seq] => 4
+    [isi_variant_desc] => Dynamic Forces Variant
+    [isi_cover_dt_disp] => May-2000
+    [isi_cover_dt] => 2000-05-01
+    [isi_story_arc_id] => 816
+    [isi_story_arc_name] => Revolution (X-Men)
+)
+Array
+(
+    [isi_issue_id] => 75578
+    [isi_issue_type] => VAR
+    [isi_issue_num] => 100
+    [isi_issue_name] => End of Days
+    [isi_variant_seq] => 5
+    [isi_variant_desc] => John Byrne Cover
+    [isi_cover_dt_disp] => May-2000
+    [isi_cover_dt] => 2000-05-01
+    [isi_story_arc_id] => 816
+    [isi_story_arc_name] => Revolution (X-Men)
+)
+Array
+(
+    [isi_issue_id] => 75581
+    [isi_issue_type] => VAR
+    [isi_issue_num] => 100
+    [isi_issue_name] => End of Days
+    [isi_variant_seq] => 6
+    [isi_variant_desc] => John Romita Jr. Cover
+    [isi_cover_dt_disp] => May-2000
+    [isi_cover_dt] => 2000-05-01
+    [isi_story_arc_id] => 816
+    [isi_story_arc_name] => Revolution (X-Men)
+)
+Array
+(
+    [isi_issue_id] => 75577
+    [isi_issue_type] => VAR
+    [isi_issue_num] => 100
+    [isi_issue_name] => End of Days
+    [isi_variant_seq] => 7
+    [isi_variant_desc] => Leinil Francis Yu Cover
+    [isi_cover_dt_disp] => May-2000
+    [isi_cover_dt] => 2000-05-01
+    [isi_story_arc_id] => 816
+    [isi_story_arc_name] => Revolution (X-Men)
+)
+Array
+(
+    [isi_issue_id] => 75583
+    [isi_issue_type] => VAR
+    [isi_issue_num] => 100
+    [isi_issue_name] => End of Days
+    [isi_variant_seq] => 8
+    [isi_variant_desc] => Leinil Francis Yu Variant
+    [isi_cover_dt_disp] => May-2000
+    [isi_cover_dt] => 2000-05-01
+    [isi_story_arc_id] => 816
+    [isi_story_arc_name] => Revolution (X-Men)
+)
+Array
+(
+    [isi_issue_id] => 75582
+    [isi_issue_type] => VAR
+    [isi_issue_num] => 100
+    [isi_issue_name] => End of Days
+    [isi_variant_seq] => 9
+    [isi_variant_desc] => Paul Smith Cover
+    [isi_cover_dt_disp] => May-2000
+    [isi_cover_dt] => 2000-05-01
+    [isi_story_arc_id] => 816
+    [isi_story_arc_name] => Revolution (X-Men)
+)
+Array
+(
+    [isi_issue_id] => 4221
+    [isi_issue_type] => NV
+    [isi_issue_num] => 99
+    [isi_issue_name] => Oh, the Humanity!
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Apr-2000
+    [isi_cover_dt] => 2000-04-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 4220
+    [isi_issue_type] => NV
+    [isi_issue_num] => 98
+    [isi_issue_name] => First & Last, Part 2
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Mar-2000
+    [isi_cover_dt] => 2000-03-01
+    [isi_story_arc_id] => 139
+    [isi_story_arc_name] => The Ages of Apocalypse
+)
+Array
+(
+    [isi_issue_id] => 4219
+    [isi_issue_type] => NV
+    [isi_issue_num] => 97
+    [isi_issue_name] => The End of the World as We Know It Part Two
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Feb-2000
+    [isi_cover_dt] => 2000-02-01
+    [isi_story_arc_id] => 138
+    [isi_story_arc_name] => Apocalypse: The Twelve
+)
+Array
+(
+    [isi_issue_id] => 56677
+    [isi_issue_type] => VAR
+    [isi_issue_num] => 97
+    [isi_issue_name] => The End of the World as We Know It Part Two
+    [isi_variant_seq] => 2
+    [isi_variant_desc] => Variant Cover
+    [isi_cover_dt_disp] => Feb-2000
+    [isi_cover_dt] => 2000-02-01
+    [isi_story_arc_id] => 138
+    [isi_story_arc_name] => Apocalypse: The Twelve
+)
+Array
+(
+    [isi_issue_id] => 4218
+    [isi_issue_type] => NV
+    [isi_issue_num] => 96
+    [isi_issue_name] => The Gathering
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Jan-2000
+    [isi_cover_dt] => 2000-01-01
+    [isi_story_arc_id] => 606
+    [isi_story_arc_name] => Fast Lane
+)
+Array
+(
+    [isi_issue_id] => 4217
+    [isi_issue_type] => NV
+    [isi_issue_num] => 95
+    [isi_issue_name] => Do Unto Others
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Dec-1999
+    [isi_cover_dt] => 1999-12-01
+    [isi_story_arc_id] => 4489
+    [isi_story_arc_name] => The Shattering
+)
+Array
+(
+    [isi_issue_id] => 4216
+    [isi_issue_type] => NV
+    [isi_issue_num] => 94
+    [isi_issue_name] => 
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Nov-1999
+    [isi_cover_dt] => 1999-11-01
+    [isi_story_arc_id] => 148
+    [isi_story_arc_name] => Hidden Lives
+)
+Array
+(
+    [isi_issue_id] => 4215
+    [isi_issue_type] => NV
+    [isi_issue_num] => 93
+    [isi_issue_name] => Open Wounds
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Oct-1999
+    [isi_cover_dt] => 1999-10-01
+    [isi_story_arc_id] => 4489
+    [isi_story_arc_name] => The Shattering
+)
+Array
+(
+    [isi_issue_id] => 4214
+    [isi_issue_type] => NV
+    [isi_issue_num] => 92
+    [isi_issue_name] => Pressure Points
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Sep-1999
+    [isi_cover_dt] => 1999-09-01
+    [isi_story_arc_id] => 4489
+    [isi_story_arc_name] => The Shattering
+)
+Array
+(
+    [isi_issue_id] => 4213
+    [isi_issue_type] => NV
+    [isi_issue_num] => 91
+    [isi_issue_name] => Technical Difficulties
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Aug-1999
+    [isi_cover_dt] => 1999-08-01
+    [isi_story_arc_id] => 135
+    [isi_story_arc_name] => Rage Against the Machine
+)
+Array
+(
+    [isi_issue_id] => 4212
+    [isi_issue_type] => NV
+    [isi_issue_num] => 90
+    [isi_issue_name] => Eve of Destruction
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Jul-1999
+    [isi_cover_dt] => 1999-07-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 4211
+    [isi_issue_type] => NV
+    [isi_issue_num] => 89
+    [isi_issue_name] => Yesterday's News
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Jun-1999
+    [isi_cover_dt] => 1999-06-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 4210
+    [isi_issue_type] => NV
+    [isi_issue_num] => 88
+    [isi_issue_name] => A World Apart
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => May-1999
+    [isi_cover_dt] => 1999-05-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 4209
+    [isi_issue_type] => NV
+    [isi_issue_num] => 87
+    [isi_issue_name] => No Surrender!
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Apr-1999
+    [isi_cover_dt] => 1999-04-01
+    [isi_story_arc_id] => 134
+    [isi_story_arc_name] => The Magneto War
+)
+Array
+(
+    [isi_issue_id] => 4208
+    [isi_issue_type] => NV
+    [isi_issue_num] => 86
+    [isi_issue_name] => Thanks for the Memories
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Mar-1999
+    [isi_cover_dt] => 1999-03-01
+    [isi_story_arc_id] => 134
+    [isi_story_arc_name] => The Magneto War
+)
+Array
+(
+    [isi_issue_id] => 4207
+    [isi_issue_type] => NV
+    [isi_issue_num] => 85
+    [isi_issue_name] => A Tale of Two Mutants
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Late Feb-1999
+    [isi_cover_dt] => 1999-02-15
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 4206
+    [isi_issue_type] => NV
+    [isi_issue_num] => 84
+    [isi_issue_name] => The Hunt for Xavier: Part 6
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Feb-1999
+    [isi_cover_dt] => 1999-02-01
+    [isi_story_arc_id] => 133
+    [isi_story_arc_name] => The Hunt For Xavier
+)
+Array
+(
+    [isi_issue_id] => 4205
+    [isi_issue_type] => NV
+    [isi_issue_num] => 83
+    [isi_issue_name] => The Hunt for Xavier: Part 4
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Jan-1999
+    [isi_cover_dt] => 1999-01-01
+    [isi_story_arc_id] => 133
+    [isi_story_arc_name] => The Hunt For Xavier
+)
+Array
+(
+    [isi_issue_id] => 4204
+    [isi_issue_type] => NV
+    [isi_issue_num] => 82
+    [isi_issue_name] => The Hunt for Xavier: Part 2
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Dec-1998
+    [isi_cover_dt] => 1998-12-01
+    [isi_story_arc_id] => 133
+    [isi_story_arc_name] => The Hunt For Xavier
+)
+Array
+(
+    [isi_issue_id] => 4203
+    [isi_issue_type] => NV
+    [isi_issue_num] => 81
+    [isi_issue_name] => Jack of Hearts, Queen of Death!
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Nov-1998
+    [isi_cover_dt] => 1998-11-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 4202
+    [isi_issue_type] => NV
+    [isi_issue_num] => 80
+    [isi_issue_name] => Children of the Atom Part Two
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Oct-1998
+    [isi_cover_dt] => 1998-10-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 174405
+    [isi_issue_type] => VAR
+    [isi_issue_num] => 80
+    [isi_issue_name] => Children of the Atom Part Two
+    [isi_variant_seq] => 2
+    [isi_variant_desc] => Joe Quesada Cover
+    [isi_cover_dt_disp] => Oct-1998
+    [isi_cover_dt] => 1998-10-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 177373
+    [isi_issue_type] => VAR
+    [isi_issue_num] => 80
+    [isi_issue_name] => Children of the Atom Part Two
+    [isi_variant_seq] => 3
+    [isi_variant_desc] => Non-Foil Newsstand Cover
+    [isi_cover_dt_disp] => Oct-1998
+    [isi_cover_dt] => 1998-10-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 4201
+    [isi_issue_type] => NV
+    [isi_issue_num] => 79
+    [isi_issue_name] => Little Morlock Lost
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Sep-1998
+    [isi_cover_dt] => 1998-09-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 4200
+    [isi_issue_type] => NV
+    [isi_issue_num] => 78
+    [isi_issue_name] => Stormfront: Part 2
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Aug-1998
+    [isi_cover_dt] => 1998-08-01
+    [isi_story_arc_id] => 146
+    [isi_story_arc_name] => Psi-War
+)
+Array
+(
+    [isi_issue_id] => 4199
+    [isi_issue_type] => NV
+    [isi_issue_num] => 77
+    [isi_issue_name] => Stormfront: Part 1
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Jul-1998
+    [isi_cover_dt] => 1998-07-01
+    [isi_story_arc_id] => 146
+    [isi_story_arc_name] => Psi-War
+)
+Array
+(
+    [isi_issue_id] => 4198
+    [isi_issue_type] => NV
+    [isi_issue_num] => 76
+    [isi_issue_name] => A Boykie and His Dinges
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Jun-1998
+    [isi_cover_dt] => 1998-06-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 4197
+    [isi_issue_type] => NV
+    [isi_issue_num] => 75
+    [isi_issue_name] => Anatomy of a Monster
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => May-1998
+    [isi_cover_dt] => 1998-05-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 4196
+    [isi_issue_type] => NV
+    [isi_issue_num] => 74
+    [isi_issue_name] => Rituals
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Apr-1998
+    [isi_cover_dt] => 1998-04-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 4195
+    [isi_issue_type] => NV
+    [isi_issue_num] => 73
+    [isi_issue_name] => The Elements Within Us
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Mar-1998
+    [isi_cover_dt] => 1998-03-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 4192
+    [isi_issue_type] => NV
+    [isi_issue_num] => 72
+    [isi_issue_name] => Life Lessons
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Feb-1998
+    [isi_cover_dt] => 1998-02-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 4189
+    [isi_issue_type] => NV
+    [isi_issue_num] => 71
+    [isi_issue_name] => A House in Order
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Jan-1998
+    [isi_cover_dt] => 1998-01-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 4188
+    [isi_issue_type] => NV
+    [isi_issue_num] => 70
+    [isi_issue_name] => Homecoming
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Dec-1997
+    [isi_cover_dt] => 1997-12-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 4185
+    [isi_issue_type] => NV
+    [isi_issue_num] => 69
+    [isi_issue_name] => Last Exit
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Nov-1997
+    [isi_cover_dt] => 1997-11-01
+    [isi_story_arc_id] => 132
+    [isi_story_arc_name] => Operation: Zero Tolerance
+)
+Array
+(
+    [isi_issue_id] => 4182
+    [isi_issue_type] => NV
+    [isi_issue_num] => 68
+    [isi_issue_name] => Heart of the Matter
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Oct-1997
+    [isi_cover_dt] => 1997-10-01
+    [isi_story_arc_id] => 132
+    [isi_story_arc_name] => Operation: Zero Tolerance
+)
+Array
+(
+    [isi_issue_id] => 4181
+    [isi_issue_type] => NV
+    [isi_issue_num] => 67
+    [isi_issue_name] => The End of Days
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Sep-1997
+    [isi_cover_dt] => 1997-09-01
+    [isi_story_arc_id] => 132
+    [isi_story_arc_name] => Operation: Zero Tolerance
+)
+Array
+(
+    [isi_issue_id] => 4178
+    [isi_issue_type] => NV
+    [isi_issue_num] => 66
+    [isi_issue_name] => Start Spreadin' the News...
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Aug-1997
+    [isi_cover_dt] => 1997-08-01
+    [isi_story_arc_id] => 132
+    [isi_story_arc_name] => Operation: Zero Tolerance
+)
+Array
+(
+    [isi_issue_id] => 4174
+    [isi_issue_type] => NV
+    [isi_issue_num] => 65
+    [isi_issue_name] => First Blood
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Jun-1997
+    [isi_cover_dt] => 1997-06-01
+    [isi_story_arc_id] => 132
+    [isi_story_arc_name] => Operation: Zero Tolerance
+)
+Array
+(
+    [isi_issue_id] => 4173
+    [isi_issue_type] => NV
+    [isi_issue_num] => 64
+    [isi_issue_name] => Games of Deceit & Death: Part 3
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => May-1997
+    [isi_cover_dt] => 1997-05-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 4172
+    [isi_issue_type] => NV
+    [isi_issue_num] => 63
+    [isi_issue_name] => Games of Deceit & Death: Part 2
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Apr-1997
+    [isi_cover_dt] => 1997-04-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 4171
+    [isi_issue_type] => NV
+    [isi_issue_num] => 62
+    [isi_issue_name] => Games of Deceit & Death: Part 1
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Mar-1997
+    [isi_cover_dt] => 1997-03-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 65945
+    [isi_issue_type] => VAR
+    [isi_issue_num] => 62
+    [isi_issue_name] => Games of Deceit & Death: Part 1
+    [isi_variant_seq] => 2
+    [isi_variant_desc] => Wolverine and Storm Variant
+    [isi_cover_dt_disp] => Mar-1997
+    [isi_cover_dt] => 1997-03-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 4170
+    [isi_issue_type] => NV
+    [isi_issue_num] => 61
+    [isi_issue_name] => Bolt
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Feb-1997
+    [isi_cover_dt] => 1997-02-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 4169
+    [isi_issue_type] => NV
+    [isi_issue_num] => 60
+    [isi_issue_name] => Night
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Jan-1997
+    [isi_cover_dt] => 1997-01-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 4168
+    [isi_issue_type] => NV
+    [isi_issue_num] => 59
+    [isi_issue_name] => Touched
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Dec-1996
+    [isi_cover_dt] => 1996-12-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 4167
+    [isi_issue_type] => NV
+    [isi_issue_num] => 58
+    [isi_issue_name] => Testament
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Nov-1996
+    [isi_cover_dt] => 1996-11-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 4166
+    [isi_issue_type] => NV
+    [isi_issue_num] => 57
+    [isi_issue_name] => Man
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Oct-1996
+    [isi_cover_dt] => 1996-10-01
+    [isi_story_arc_id] => 131
+    [isi_story_arc_name] => Onslaught
+)
+Array
+(
+    [isi_issue_id] => 4050
+    [isi_issue_type] => NV
+    [isi_issue_num] => 56
+    [isi_issue_name] => Twilight of the Gods
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Sep-1996
+    [isi_cover_dt] => 1996-09-01
+    [isi_story_arc_id] => 131
+    [isi_story_arc_name] => Onslaught
+)
+Array
+(
+    [isi_issue_id] => 4049
+    [isi_issue_type] => NV
+    [isi_issue_num] => 55
+    [isi_issue_name] => Invasion
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Aug-1996
+    [isi_cover_dt] => 1996-08-01
+    [isi_story_arc_id] => 131
+    [isi_story_arc_name] => Onslaught
+)
+Array
+(
+    [isi_issue_id] => 4048
+    [isi_issue_type] => NV
+    [isi_issue_num] => 54
+    [isi_issue_name] => Inquiring Minds
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Jul-1996
+    [isi_cover_dt] => 1996-07-01
+    [isi_story_arc_id] => 131
+    [isi_story_arc_name] => Onslaught
+)
+Array
+(
+    [isi_issue_id] => 68848
+    [isi_issue_type] => VAR
+    [isi_issue_num] => 54
+    [isi_issue_name] => Inquiring Minds
+    [isi_variant_seq] => 2
+    [isi_variant_desc] => Special Collector's Edition
+    [isi_cover_dt_disp] => Jul-1996
+    [isi_cover_dt] => 1996-07-01
+    [isi_story_arc_id] => 131
+    [isi_story_arc_name] => Onslaught
+)
+Array
+(
+    [isi_issue_id] => 4047
+    [isi_issue_type] => NV
+    [isi_issue_num] => 53
+    [isi_issue_name] => False Fronts
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Jun-1996
+    [isi_cover_dt] => 1996-06-01
+    [isi_story_arc_id] => 131
+    [isi_story_arc_name] => Onslaught
+)
+Array
+(
+    [isi_issue_id] => 4046
+    [isi_issue_type] => NV
+    [isi_issue_num] => 52
+    [isi_issue_name] => Collector's Item
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => May-1996
+    [isi_cover_dt] => 1996-05-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 4045
+    [isi_issue_type] => NV
+    [isi_issue_num] => 51
+    [isi_issue_name] => Deathbound Train
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Apr-1996
+    [isi_cover_dt] => 1996-04-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 4044
+    [isi_issue_type] => NV
+    [isi_issue_num] => 50
+    [isi_issue_name] => Full Court Press
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Mar-1996
+    [isi_cover_dt] => 1996-03-01
+    [isi_story_arc_id] => 131
+    [isi_story_arc_name] => Onslaught
+)
+Array
+(
+    [isi_issue_id] => 111064
+    [isi_issue_type] => VAR
+    [isi_issue_num] => 50
+    [isi_issue_name] => Full Court Press
+    [isi_variant_seq] => 2
+    [isi_variant_desc] => American Entertainment Edition
+    [isi_cover_dt_disp] => Mar-1996
+    [isi_cover_dt] => 1996-03-01
+    [isi_story_arc_id] => 131
+    [isi_story_arc_name] => Onslaught
+)
+Array
+(
+    [isi_issue_id] => 111063
+    [isi_issue_type] => VAR
+    [isi_issue_num] => 50
+    [isi_issue_name] => Full Court Press
+    [isi_variant_seq] => 3
+    [isi_variant_desc] => Gold Edition
+    [isi_cover_dt_disp] => Mar-1996
+    [isi_cover_dt] => 1996-03-01
+    [isi_story_arc_id] => 131
+    [isi_story_arc_name] => Onslaught
+)
+Array
+(
+    [isi_issue_id] => 111062
+    [isi_issue_type] => VAR
+    [isi_issue_num] => 50
+    [isi_issue_name] => Full Court Press
+    [isi_variant_seq] => 4
+    [isi_variant_desc] => Prismatic Foil Cover
+    [isi_cover_dt_disp] => Mar-1996
+    [isi_cover_dt] => 1996-03-01
+    [isi_story_arc_id] => 131
+    [isi_story_arc_name] => Onslaught
+)
+Array
+(
+    [isi_issue_id] => 4043
+    [isi_issue_type] => NV
+    [isi_issue_num] => 49
+    [isi_issue_name] => Eyes of a New York Woman
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Feb-1996
+    [isi_cover_dt] => 1996-02-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 4042
+    [isi_issue_type] => NV
+    [isi_issue_num] => 48
+    [isi_issue_name] => Five Card Studs
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Jan-1996
+    [isi_cover_dt] => 1996-01-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 4041
+    [isi_issue_type] => NV
+    [isi_issue_num] => 47
+    [isi_issue_name] => Big Trouble in Little Italy!
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Dec-1995
+    [isi_cover_dt] => 1995-12-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 4040
+    [isi_issue_type] => NV
+    [isi_issue_num] => 46
+    [isi_issue_name] => They're Baaack...
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Nov-1995
+    [isi_cover_dt] => 1995-11-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 4039
+    [isi_issue_type] => NV
+    [isi_issue_num] => 45
+    [isi_issue_name] => The Enemy of My Enemy...
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Oct-1995
+    [isi_cover_dt] => 1995-10-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 111067
+    [isi_issue_type] => VAR
+    [isi_issue_num] => 45
+    [isi_issue_name] => The Enemy of My Enemy...
+    [isi_variant_seq] => 2
+    [isi_variant_desc] => Regular Edition
+    [isi_cover_dt_disp] => Oct-1995
+    [isi_cover_dt] => 1995-10-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 4038
+    [isi_issue_type] => NV
+    [isi_issue_num] => 44
+    [isi_issue_name] => Lost and Found
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Sep-1995
+    [isi_cover_dt] => 1995-09-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 4037
+    [isi_issue_type] => NV
+    [isi_issue_num] => 43
+    [isi_issue_name] => Falling From Grace
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Aug-1995
+    [isi_cover_dt] => 1995-08-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 4006
+    [isi_issue_type] => NV
+    [isi_issue_num] => 42
+    [isi_issue_name] => Heaven Can Wait
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Jul-1995
+    [isi_cover_dt] => 1995-07-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 4005
+    [isi_issue_type] => NV
+    [isi_issue_num] => 41
+    [isi_issue_name] => Dreams Die!
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Feb-1995
+    [isi_cover_dt] => 1995-02-01
+    [isi_story_arc_id] => 130
+    [isi_story_arc_name] => Legion Quest
+)
+Array
+(
+    [isi_issue_id] => 111073
+    [isi_issue_type] => VAR
+    [isi_issue_num] => 41
+    [isi_issue_name] => Dreams Die!
+    [isi_variant_seq] => 2
+    [isi_variant_desc] => Newsstand Edition
+    [isi_cover_dt_disp] => Feb-1995
+    [isi_cover_dt] => 1995-02-01
+    [isi_story_arc_id] => 130
+    [isi_story_arc_name] => Legion Quest
+)
+Array
+(
+    [isi_issue_id] => 4004
+    [isi_issue_type] => NV
+    [isi_issue_num] => 40
+    [isi_issue_name] => The Killing Time
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Jan-1995
+    [isi_cover_dt] => 1995-01-01
+    [isi_story_arc_id] => 130
+    [isi_story_arc_name] => Legion Quest
+)
+Array
+(
+    [isi_issue_id] => 111072
+    [isi_issue_type] => VAR
+    [isi_issue_num] => 40
+    [isi_issue_name] => The Killing Time
+    [isi_variant_seq] => 2
+    [isi_variant_desc] => Newsstand Edition
+    [isi_cover_dt_disp] => Jan-1995
+    [isi_cover_dt] => 1995-01-01
+    [isi_story_arc_id] => 130
+    [isi_story_arc_name] => Legion Quest
+)
+Array
+(
+    [isi_issue_id] => 4003
+    [isi_issue_type] => NV
+    [isi_issue_num] => 39
+    [isi_issue_name] => Birds of a Feather
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Dec-1994
+    [isi_cover_dt] => 1994-12-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 111071
+    [isi_issue_type] => VAR
+    [isi_issue_num] => 39
+    [isi_issue_name] => Birds of a Feather
+    [isi_variant_seq] => 2
+    [isi_variant_desc] => Newsstand Edition
+    [isi_cover_dt_disp] => Dec-1994
+    [isi_cover_dt] => 1994-12-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 4002
+    [isi_issue_type] => NV
+    [isi_issue_num] => 38
+    [isi_issue_name] => Smoke and Mirrors
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Nov-1994
+    [isi_cover_dt] => 1994-11-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 111070
+    [isi_issue_type] => VAR
+    [isi_issue_num] => 38
+    [isi_issue_name] => Smoke and Mirrors
+    [isi_variant_seq] => 2
+    [isi_variant_desc] => Newsstand Edition
+    [isi_cover_dt_disp] => Nov-1994
+    [isi_cover_dt] => 1994-11-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 4001
+    [isi_issue_type] => NV
+    [isi_issue_num] => 37
+    [isi_issue_name] => Generation Next, Part 4: The Currents Shift
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Oct-1994
+    [isi_cover_dt] => 1994-10-01
+    [isi_story_arc_id] => 129
+    [isi_story_arc_name] => Generation Next
+)
+Array
+(
+    [isi_issue_id] => 111069
+    [isi_issue_type] => VAR
+    [isi_issue_num] => 37
+    [isi_issue_name] => Generation Next, Part 4: The Currents Shift
+    [isi_variant_seq] => 2
+    [isi_variant_desc] => Regular Edition
+    [isi_cover_dt_disp] => Oct-1994
+    [isi_cover_dt] => 1994-10-01
+    [isi_story_arc_id] => 129
+    [isi_story_arc_name] => Generation Next
+)
+Array
+(
+    [isi_issue_id] => 4000
+    [isi_issue_type] => NV
+    [isi_issue_num] => 36
+    [isi_issue_name] => Generation Next, Part 2: Drop the Leash
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Sep-1994
+    [isi_cover_dt] => 1994-09-01
+    [isi_story_arc_id] => 129
+    [isi_story_arc_name] => Generation Next
+)
+Array
+(
+    [isi_issue_id] => 111068
+    [isi_issue_type] => VAR
+    [isi_issue_num] => 36
+    [isi_issue_name] => Generation Next, Part 2: Drop the Leash
+    [isi_variant_seq] => 2
+    [isi_variant_desc] => Regular Edition
+    [isi_cover_dt_disp] => Sep-1994
+    [isi_cover_dt] => 1994-09-01
+    [isi_story_arc_id] => 129
+    [isi_story_arc_name] => Generation Next
+)
+Array
+(
+    [isi_issue_id] => 3999
+    [isi_issue_type] => NV
+    [isi_issue_num] => 35
+    [isi_issue_name] => Sunset Grace
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Aug-1994
+    [isi_cover_dt] => 1994-08-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 3997
+    [isi_issue_type] => NV
+    [isi_issue_num] => 34
+    [isi_issue_name] => Life and Consequences
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Jul-1994
+    [isi_cover_dt] => 1994-07-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 3996
+    [isi_issue_type] => NV
+    [isi_issue_num] => 33
+    [isi_issue_name] => The Heart of Thieves
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Jun-1994
+    [isi_cover_dt] => 1994-06-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 3995
+    [isi_issue_type] => NV
+    [isi_issue_num] => 32
+    [isi_issue_name] => The Leopards and the Cats
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => May-1994
+    [isi_cover_dt] => 1994-05-01
+    [isi_story_arc_id] => 145
+    [isi_story_arc_name] => Soul Possessions
+)
+Array
+(
+    [isi_issue_id] => 3994
+    [isi_issue_type] => NV
+    [isi_issue_num] => 31
+    [isi_issue_name] => The Butterfly and the Hawk
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Apr-1994
+    [isi_cover_dt] => 1994-04-01
+    [isi_story_arc_id] => 145
+    [isi_story_arc_name] => Soul Possessions
+)
+Array
+(
+    [isi_issue_id] => 3993
+    [isi_issue_type] => NV
+    [isi_issue_num] => 30
+    [isi_issue_name] => The Ties that Bind
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Mar-1994
+    [isi_cover_dt] => 1994-03-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 3992
+    [isi_issue_type] => NV
+    [isi_issue_num] => 29
+    [isi_issue_name] => Return to Hellfire!
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Feb-1994
+    [isi_cover_dt] => 1994-02-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 3991
+    [isi_issue_type] => NV
+    [isi_issue_num] => 28
+    [isi_issue_name] => Devil in the House
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Jan-1994
+    [isi_cover_dt] => 1994-01-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 3990
+    [isi_issue_type] => NV
+    [isi_issue_num] => 27
+    [isi_issue_name] => A Song of Mourning, A Cry of Joy
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Dec-1993
+    [isi_cover_dt] => 1993-12-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 3989
+    [isi_issue_type] => NV
+    [isi_issue_num] => 26
+    [isi_issue_name] => Civil Disobedience!
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Nov-1993
+    [isi_cover_dt] => 1993-11-01
+    [isi_story_arc_id] => 127
+    [isi_story_arc_name] => Bloodties
+)
+Array
+(
+    [isi_issue_id] => 3988
+    [isi_issue_type] => NV
+    [isi_issue_num] => 25
+    [isi_issue_name] => Dreams Fade
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Oct-1993
+    [isi_cover_dt] => 1993-10-01
+    [isi_story_arc_id] => 126
+    [isi_story_arc_name] => Fatal Attractions
+)
+Array
+(
+    [isi_issue_id] => 111075
+    [isi_issue_type] => VAR
+    [isi_issue_num] => 25
+    [isi_issue_name] => Dreams Fade
+    [isi_variant_seq] => 2
+    [isi_variant_desc] => Black and White Cover
+    [isi_cover_dt_disp] => Oct-1993
+    [isi_cover_dt] => 1993-10-01
+    [isi_story_arc_id] => 126
+    [isi_story_arc_name] => Fatal Attractions
+)
+Array
+(
+    [isi_issue_id] => 176199
+    [isi_issue_type] => VAR
+    [isi_issue_num] => 25
+    [isi_issue_name] => Dreams Fade
+    [isi_variant_seq] => 3
+    [isi_variant_desc] => Gold Cover
+    [isi_cover_dt_disp] => Oct-1993
+    [isi_cover_dt] => 1993-10-01
+    [isi_story_arc_id] => 126
+    [isi_story_arc_name] => Fatal Attractions
+)
+Array
+(
+    [isi_issue_id] => 3987
+    [isi_issue_type] => NV
+    [isi_issue_num] => 24
+    [isi_issue_name] => Between Hope and Sorrow
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Sep-1993
+    [isi_cover_dt] => 1993-09-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 3985
+    [isi_issue_type] => NV
+    [isi_issue_num] => 23
+    [isi_issue_name] => Leaning Towards Oneself
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Aug-1993
+    [isi_cover_dt] => 1993-08-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 3984
+    [isi_issue_type] => NV
+    [isi_issue_num] => 22
+    [isi_issue_name] => The Mask Behind the Facade
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Jul-1993
+    [isi_cover_dt] => 1993-07-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 3983
+    [isi_issue_type] => NV
+    [isi_issue_num] => 21
+    [isi_issue_name] => The Puzzle Box
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Jun-1993
+    [isi_cover_dt] => 1993-06-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 3982
+    [isi_issue_type] => NV
+    [isi_issue_num] => 20
+    [isi_issue_name] => Digging in the Dirt
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => May-1993
+    [isi_cover_dt] => 1993-05-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 3981
+    [isi_issue_type] => NV
+    [isi_issue_num] => 19
+    [isi_issue_name] => Harvest of the Innocent
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Apr-1993
+    [isi_cover_dt] => 1993-04-01
+    [isi_story_arc_id] => 144
+    [isi_story_arc_name] => A Skinning of Souls
+)
+Array
+(
+    [isi_issue_id] => 3980
+    [isi_issue_type] => NV
+    [isi_issue_num] => 18
+    [isi_issue_name] => The Crops Mature
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Mar-1993
+    [isi_cover_dt] => 1993-03-01
+    [isi_story_arc_id] => 144
+    [isi_story_arc_name] => A Skinning of Souls
+)
+Array
+(
+    [isi_issue_id] => 3979
+    [isi_issue_type] => NV
+    [isi_issue_num] => 17
+    [isi_issue_name] => Waiting for the Ripening
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Feb-1993
+    [isi_cover_dt] => 1993-02-01
+    [isi_story_arc_id] => 144
+    [isi_story_arc_name] => A Skinning of Souls
+)
+Array
+(
+    [isi_issue_id] => 3978
+    [isi_issue_type] => NV
+    [isi_issue_num] => 16
+    [isi_issue_name] => Conflicting Cathexes
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Jan-1993
+    [isi_cover_dt] => 1993-01-01
+    [isi_story_arc_id] => 125
+    [isi_story_arc_name] => X-Cutioner's Song
+)
+Array
+(
+    [isi_issue_id] => 96260
+    [isi_issue_type] => VAR
+    [isi_issue_num] => 16
+    [isi_issue_name] => Conflicting Cathexes
+    [isi_variant_seq] => 2
+    [isi_variant_desc] => Bagged Edition with Stryfe Strike File Trading Card
+    [isi_cover_dt_disp] => Jan-1993
+    [isi_cover_dt] => 1993-01-01
+    [isi_story_arc_id] => 125
+    [isi_story_arc_name] => X-Cutioner's Song
+)
+Array
+(
+    [isi_issue_id] => 3977
+    [isi_issue_type] => NV
+    [isi_issue_num] => 15
+    [isi_issue_name] => The Camel's Back
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Dec-1992
+    [isi_cover_dt] => 1992-12-01
+    [isi_story_arc_id] => 125
+    [isi_story_arc_name] => X-Cutioner's Song
+)
+Array
+(
+    [isi_issue_id] => 61188
+    [isi_issue_type] => VAR
+    [isi_issue_num] => 15
+    [isi_issue_name] => The Camel's Back
+    [isi_variant_seq] => 2
+    [isi_variant_desc] => Bagged Edition with Stryfe Strike File Trading Card
+    [isi_cover_dt_disp] => Dec-1992
+    [isi_cover_dt] => 1992-12-01
+    [isi_story_arc_id] => 125
+    [isi_story_arc_name] => X-Cutioner's Song
+)
+Array
+(
+    [isi_issue_id] => 3976
+    [isi_issue_type] => NV
+    [isi_issue_num] => 14
+    [isi_issue_name] => Fingers on the Trigger
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Nov-1992
+    [isi_cover_dt] => 1992-11-01
+    [isi_story_arc_id] => 125
+    [isi_story_arc_name] => X-Cutioner's Song
+)
+Array
+(
+    [isi_issue_id] => 61187
+    [isi_issue_type] => VAR
+    [isi_issue_num] => 14
+    [isi_issue_name] => Fingers on the Trigger
+    [isi_variant_seq] => 2
+    [isi_variant_desc] => Bagged Edition with Stryfe Strike File Trading Card
+    [isi_cover_dt_disp] => Nov-1992
+    [isi_cover_dt] => 1992-11-01
+    [isi_story_arc_id] => 125
+    [isi_story_arc_name] => X-Cutioner's Song
+)
+Array
+(
+    [isi_issue_id] => 3975
+    [isi_issue_type] => NV
+    [isi_issue_num] => 13
+    [isi_issue_name] => Hazardous Territory
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Oct-1992
+    [isi_cover_dt] => 1992-10-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 3974
+    [isi_issue_type] => NV
+    [isi_issue_num] => 12
+    [isi_issue_name] => Broken Mirrors
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Sep-1992
+    [isi_cover_dt] => 1992-09-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 3973
+    [isi_issue_type] => NV
+    [isi_issue_num] => 11
+    [isi_issue_name] => The X-Men vs The X-Men (Again
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Aug-1992
+    [isi_cover_dt] => 1992-08-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 110251
+    [isi_issue_type] => VAR
+    [isi_issue_num] => 11
+    [isi_issue_name] => The X-Men vs The X-Men (Again
+    [isi_variant_seq] => 2
+    [isi_variant_desc] => X-Men board game Reprint/Silver Cover
+    [isi_cover_dt_disp] => Aug-1992
+    [isi_cover_dt] => 1992-08-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 3972
+    [isi_issue_type] => NV
+    [isi_issue_num] => 10
+    [isi_issue_name] => Where Happy Little Bluebirds Fly...
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Jul-1992
+    [isi_cover_dt] => 1992-07-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 82245
+    [isi_issue_type] => VAR
+    [isi_issue_num] => 10
+    [isi_issue_name] => Where Happy Little Bluebirds Fly...
+    [isi_variant_seq] => 2
+    [isi_variant_desc] => Marvel Legends Printing
+    [isi_cover_dt_disp] => Feb-2006
+    [isi_cover_dt] => 2006-02-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 3971
+    [isi_issue_type] => NV
+    [isi_issue_num] => 9
+    [isi_issue_name] => The Not So Big Easy
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Jun-1992
+    [isi_cover_dt] => 1992-06-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 3970
+    [isi_issue_type] => NV
+    [isi_issue_num] => 8
+    [isi_issue_name] => Tooth and Claw
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => May-1992
+    [isi_cover_dt] => 1992-05-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 3969
+    [isi_issue_type] => NV
+    [isi_issue_num] => 7
+    [isi_issue_name] => Inside...Out!
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Apr-1992
+    [isi_cover_dt] => 1992-04-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 86284
+    [isi_issue_type] => VAR
+    [isi_issue_num] => 7
+    [isi_issue_name] => Inside...Out!
+    [isi_variant_seq] => 2
+    [isi_variant_desc] => Marvel Legends Reprint
+    [isi_cover_dt_disp] => May-2005
+    [isi_cover_dt] => 2005-05-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 3968
+    [isi_issue_type] => NV
+    [isi_issue_num] => 6
+    [isi_issue_name] => Farther Still
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Mar-1992
+    [isi_cover_dt] => 1992-03-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 105862
+    [isi_issue_type] => VAR
+    [isi_issue_num] => 6
+    [isi_issue_name] => Farther Still
+    [isi_variant_seq] => 2
+    [isi_variant_desc] => Marvel Legends Reprint
+    [isi_cover_dt_disp] => Jul-2003
+    [isi_cover_dt] => 2003-07-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 3967
+    [isi_issue_type] => NV
+    [isi_issue_num] => 5
+    [isi_issue_name] => Blowback
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Feb-1992
+    [isi_cover_dt] => 1992-02-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 3966
+    [isi_issue_type] => NV
+    [isi_issue_num] => 4
+    [isi_issue_name] => The Resurrection And The Flesh
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Jan-1992
+    [isi_cover_dt] => 1992-01-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 226767
+    [isi_issue_type] => VAR
+    [isi_issue_num] => 4
+    [isi_issue_name] => The Resurrection And The Flesh
+    [isi_variant_seq] => 2
+    [isi_variant_desc] => Marvel Legends Edition
+    [isi_cover_dt_disp] => Feb-2003
+    [isi_cover_dt] => 2003-02-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 3965
+    [isi_issue_type] => NV
+    [isi_issue_num] => 3
+    [isi_issue_name] => Fallout!
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Dec-1991
+    [isi_cover_dt] => 1991-12-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 105861
+    [isi_issue_type] => VAR
+    [isi_issue_num] => 3
+    [isi_issue_name] => Fallout!
+    [isi_variant_seq] => 2
+    [isi_variant_desc] => Marvel Legends Reprint
+    [isi_cover_dt_disp] => Feb-2003
+    [isi_cover_dt] => 2003-02-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 3964
+    [isi_issue_type] => NV
+    [isi_issue_num] => 2
+    [isi_issue_name] => Firestorm
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Nov-1991
+    [isi_cover_dt] => 1991-11-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 226766
+    [isi_issue_type] => VAR
+    [isi_issue_num] => 2
+    [isi_issue_name] => Firestorm
+    [isi_variant_seq] => 2
+    [isi_variant_desc] => Marvel Legends Edition
+    [isi_cover_dt_disp] => Aug-2002
+    [isi_cover_dt] => 2002-08-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 3963
+    [isi_issue_type] => NV
+    [isi_issue_num] => 1
+    [isi_issue_name] => Rubicon
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Oct-1991
+    [isi_cover_dt] => 1991-10-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 54316
+    [isi_issue_type] => VAR
+    [isi_issue_num] => 1
+    [isi_issue_name] => Rubicon
+    [isi_variant_seq] => 2
+    [isi_variant_desc] => Colossus/Rogue/Gambit/Psylocke cover
+    [isi_cover_dt_disp] => Oct-1991
+    [isi_cover_dt] => 1991-10-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 54317
+    [isi_issue_type] => VAR
+    [isi_issue_num] => 1
+    [isi_issue_name] => Rubicon
+    [isi_variant_seq] => 3
+    [isi_variant_desc] => Gatefold cover
+    [isi_cover_dt_disp] => Oct-1991
+    [isi_cover_dt] => 1991-10-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 54313
+    [isi_issue_type] => VAR
+    [isi_issue_num] => 1
+    [isi_issue_name] => Rubicon
+    [isi_variant_seq] => 4
+    [isi_variant_desc] => Magneto cover
+    [isi_cover_dt_disp] => Oct-1991
+    [isi_cover_dt] => 1991-10-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 54305
+    [isi_issue_type] => VAR
+    [isi_issue_num] => 1
+    [isi_issue_name] => Rubicon
+    [isi_variant_seq] => 5
+    [isi_variant_desc] => Wolverine/Cyclops cover
+    [isi_cover_dt_disp] => Oct-1991
+    [isi_cover_dt] => 1991-10-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 19304
+    [isi_issue_type] => NV
+    [isi_issue_num] => -1
+    [isi_issue_name] => I Had a Dream
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Jul-1997
+    [isi_cover_dt] => 1997-07-01
+    [isi_story_arc_id] => 511
+    [isi_story_arc_name] => Flashback (Marvel)
+)
+Array
+(
+    [isi_issue_id] => 161953
+    [isi_issue_type] => VAR
+    [isi_issue_num] => -1
+    [isi_issue_name] => I Had a Dream
+    [isi_variant_seq] => 2
+    [isi_variant_desc] => Variant Cover
+    [isi_cover_dt_disp] => Jul-1997
+    [isi_cover_dt] => 1997-07-01
+    [isi_story_arc_id] => 511
+    [isi_story_arc_name] => Flashback (Marvel)
+)
+Array
+(
+    [isi_issue_id] => 82588
+    [isi_issue_type] => NV
+    [isi_issue_num] => TPB
+    [isi_issue_name] => The Blood of Apocalypse
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Jul-2006
+    [isi_cover_dt] => 2006-07-01
+    [isi_story_arc_id] => 1223
+    [isi_story_arc_name] => The Blood of Apocalypse
+)
+Array
+(
+    [isi_issue_id] => 121160
+    [isi_issue_type] => NV
+    [isi_issue_num] => TPB 01*121160
+    [isi_issue_name] => Supernovas
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Feb-2008
+    [isi_cover_dt] => 2008-02-01
+    [isi_story_arc_id] => 2117
+    [isi_story_arc_name] => Red Data
+)
+Array
+(
+    [isi_issue_id] => 46119
+    [isi_issue_type] => NV
+    [isi_issue_num] => TPB 02*46119
+    [isi_issue_name] => Mutant Genesis
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Aug-1995
+    [isi_cover_dt] => 1995-08-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 195079
+    [isi_issue_type] => VAR
+    [isi_issue_num] => TPB 02*46119
+    [isi_issue_name] => Mutant Genesis
+    [isi_variant_seq] => 2
+    [isi_variant_desc] => 2006 Edition
+    [isi_cover_dt_disp] => May-2006
+    [isi_cover_dt] => 2006-05-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 195078
+    [isi_issue_type] => VAR
+    [isi_issue_num] => TPB 02*46119
+    [isi_issue_name] => Mutant Genesis
+    [isi_variant_seq] => 3
+    [isi_variant_desc] => 2nd Printing
+    [isi_cover_dt_disp] => Apr-2002
+    [isi_cover_dt] => 2002-04-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 112559
+    [isi_issue_type] => VAR
+    [isi_issue_num] => TPB 02*46119
+    [isi_issue_name] => Mutant Genesis
+    [isi_variant_seq] => 4
+    [isi_variant_desc] => X-Men Legends vol. 1
+    [isi_cover_dt_disp] => 2003
+    [isi_cover_dt] => 2003-01-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 82606
+    [isi_issue_type] => NV
+    [isi_issue_num] => TPB 03*82606
+    [isi_issue_name] => Golgotha
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Jul-2005
+    [isi_cover_dt] => 2005-07-01
+    [isi_story_arc_id] => 235
+    [isi_story_arc_name] => Golgotha
+)
+Array
+(
+    [isi_issue_id] => 83724
+    [isi_issue_type] => NV
+    [isi_issue_num] => TPB 04*83724
+    [isi_issue_name] => Eve of Destruction
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Apr-2001
+    [isi_cover_dt] => 2001-04-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 71964
+    [isi_issue_type] => NV
+    [isi_issue_num] => TPB 05*71964
+    [isi_issue_name] => Decimation: X-Men - The Day After
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Apr-2006
+    [isi_cover_dt] => 2006-04-01
+    [isi_story_arc_id] => 1761
+    [isi_story_arc_name] => What Lorna Saw
+)
+Array
+(
+    [isi_issue_id] => 59414
+    [isi_issue_type] => NV
+    [isi_issue_num] => TPB 06*59414
+    [isi_issue_name] => Day of the Atom
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => 2005
+    [isi_cover_dt] => 2005-01-01
+    [isi_story_arc_id] => 233
+    [isi_story_arc_name] => Day of the Atom
+)
+Array
+(
+    [isi_issue_id] => 115269
+    [isi_issue_type] => NV
+    [isi_issue_num] => TPB 07*115269
+    [isi_issue_name] => Blinded By The Light
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Dec-2007
+    [isi_cover_dt] => 2007-12-01
+    [isi_story_arc_id] => 2243
+    [isi_story_arc_name] => Blinded By the Light
+)
+Array
+(
+    [isi_issue_id] => 71960
+    [isi_issue_type] => NV
+    [isi_issue_num] => TPB 08*71960
+    [isi_issue_name] => Bizarre Love Triangle
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Oct-2005
+    [isi_cover_dt] => 2005-10-01
+    [isi_story_arc_id] => 236
+    [isi_story_arc_name] => Bizarre Love Triangle
+)
+Array
+(
+    [isi_issue_id] => 290822
+    [isi_issue_type] => NV
+    [isi_issue_num] => TPB 09*290822
+    [isi_issue_name] => A Skinning of Souls
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => 2013
+    [isi_cover_dt] => 2013-01-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 208035
+    [isi_issue_type] => NV
+    [isi_issue_num] => HC vol. 01
+    [isi_issue_name] => X-Men: Mutant Genesis
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Jul-2010
+    [isi_cover_dt] => 2010-07-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 208036
+    [isi_issue_type] => VAR
+    [isi_issue_num] => HC vol. 01
+    [isi_issue_name] => X-Men: Mutant Genesis
+    [isi_variant_seq] => 2
+    [isi_variant_desc] => Direct Market Edition
+    [isi_cover_dt_disp] => Jul-2010
+    [isi_cover_dt] => 2010-07-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 102047
+    [isi_issue_type] => NV
+    [isi_issue_num] => HC
+    [isi_issue_name] => Supernovas
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Aug-2007
+    [isi_cover_dt] => 2007-08-01
+    [isi_story_arc_id] => 1670
+    [isi_story_arc_name] => Supernovas
+)
+Array
+(
+    [isi_issue_id] => 37571
+    [isi_issue_type] => NV
+    [isi_issue_num] => Annual 2000
+    [isi_issue_name] => Mutie. Dead.
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => 2000
+    [isi_cover_dt] => 2000-01-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 37572
+    [isi_issue_type] => NV
+    [isi_issue_num] => Annual 1999
+    [isi_issue_name] => Metal Works
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => 1999
+    [isi_cover_dt] => 1999-01-01
+    [isi_story_arc_id] => 135
+    [isi_story_arc_name] => Rage Against the Machine
+)
+Array
+(
+    [isi_issue_id] => 28434
+    [isi_issue_type] => NV
+    [isi_issue_num] => Annual 03
+    [isi_issue_name] => Heart & Soul
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => 1994
+    [isi_cover_dt] => 1994-01-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 28426
+    [isi_issue_type] => NV
+    [isi_issue_num] => Annual 02
+    [isi_issue_name] => A Bluer Slice of Heaven
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => 1993
+    [isi_cover_dt] => 1993-01-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 179458
+    [isi_issue_type] => VAR
+    [isi_issue_num] => Annual 02
+    [isi_issue_name] => A Bluer Slice of Heaven
+    [isi_variant_seq] => 2
+    [isi_variant_desc] => with Empyrean Trading Card
+    [isi_cover_dt_disp] => 1993
+    [isi_cover_dt] => 1993-01-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 84450
+    [isi_issue_type] => NV
+    [isi_issue_num] => Annual 01 (2007)
+    [isi_issue_name] => Covenant
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Mar-2007
+    [isi_cover_dt] => 2007-03-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 28425
+    [isi_issue_type] => NV
+    [isi_issue_num] => Annual 01
+    [isi_issue_name] => The Slaves of Destiny
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => 1992
+    [isi_cover_dt] => 1992-01-01
+    [isi_story_arc_id] => 844
+    [isi_story_arc_name] => Shattershot
+)
+Array
+(
+    [isi_issue_id] => 295752
+    [isi_issue_type] => VAR
+    [isi_issue_num] => Annual 01
+    [isi_issue_name] => The Slaves of Destiny
+    [isi_variant_seq] => 2
+    [isi_variant_desc] => Direct Edition
+    [isi_cover_dt_disp] => 1992
+    [isi_cover_dt] => 1992-01-01
+    [isi_story_arc_id] => 844
+    [isi_story_arc_name] => Shattershot
+)
+Array
+(
+    [isi_issue_id] => 28462
+    [isi_issue_type] => NV
+    [isi_issue_num] => Annual '97
+    [isi_issue_name] => Not a Cloud in the Sky
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => 1997
+    [isi_cover_dt] => 1997-01-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 28458
+    [isi_issue_type] => NV
+    [isi_issue_num] => Annual '96
+    [isi_issue_name] => One Day at the Mansion
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Nov-1996
+    [isi_cover_dt] => 1996-11-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 28438
+    [isi_issue_type] => NV
+    [isi_issue_num] => Annual '95
+    [isi_issue_name] => A Sinister Heart
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => Oct-1995
+    [isi_cover_dt] => 1995-10-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [isi_issue_id] => 88128
+    [isi_issue_type] => NV
+    [isi_issue_num] => ½
+    [isi_issue_name] => Thrall
+    [isi_variant_seq] => 1
+    [isi_variant_desc] => Std Variant
+    [isi_cover_dt_disp] => 1998
+    [isi_cover_dt] => 1998-01-01
+    [isi_story_arc_id] => 
+    [isi_story_arc_name] => 
+)
+Array
+(
+    [Uncanny X-Force, Vol. 2] => Array
+        (
+            [6A] => Array
+                (
+                    [sts] => Single Distinct Date
+                    [cover_dt] => 2013-08-01
+                    [cover_dt_disp] => Aug-2013
+                )
+
+        )
+
+    [X-Men, Vol. 1] => Array
+        (
+            [40] => Array
+                (
+                    [sts] => Single Distinct Date
+                    [cover_dt] => 1995-01-01
+                    [cover_dt_disp] => Jan-1995
+                )
+
+            [45] => Array
+                (
+                    [sts] => Single Distinct Date
+                    [cover_dt] => 1995-10-01
+                    [cover_dt_disp] => Oct-1995
+                )
+
+            [53] => Array
+                (
+                    [sts] => Single Date
+                    [cover_dt] => 1996-06-01
+                    [cover_dt_disp] => Jun-1996
+                )
+
+        )
+
+)

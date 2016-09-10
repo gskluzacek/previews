@@ -1,0 +1,240 @@
+get comic book cover date from cb db
+
+I'm thinking if this is to be a comic book database web site agnostic program then the cii_series (name)
+field needs to be moved from the series table to the is_series_ids table
+
+Design Doc
+==========
+
+Process
+-------
+
+1 scan issues into comic collectorz
+	- fill out fields: purchase date, store, condition
+2 export flat (text) flie
+	- chose "invoice output" for sort fields and column
+	- select all comics that do not have a owner
+	- go to file --> export to --> text file
+	- chose selected comics, use main screen settings, semicolon, double quotes, space
+	- provide a destination file name
+	- click the export button
+3 process flat file with the program (see below) to generate output file with invoice data & cover date
+	- $ cd /Users/gskluzacek/Documents/Development/get\ comic\ book\ cover\ date\ from\ cb\ db  
+	- $ php get_cvr_dt.php -s1 > out.txt
+	- $ open -a /Applications/TextWrangler.app out.txt
+	- look for any missing titles and add as needed...
+4 open output file in excel using the file --> open (text) file, then use the text import wizzard
+5 copy data to excel invoce template
+6 enter comic book prices
+7 update purchase price & owner in comic collectorz
+
+Adding a new series to the database
+-----------------------------------
+
+lookup the title on http://www.comicbookdb.com and get the title name and ID
+
+insert a record into the SERIES table
+	ser_name: The name as I want the title to appear on the invoice
+	ser_name_sort:	name to be used to sort by
+	ser_year: the year issue number one was published
+	ser_cover_price: the cover price of the comic with no discounts
+	cii_series: name of the series on the comic book db web site
+	
+insert a record into the IS_SERIES_IDS table
+	ser_id: the id for the series from the SERIES table
+	is_id: 1 <-- the id for the comic book db web site
+	issi_series_id: the title ID from the comic book db web site
+
+Database
+--------
+
+internet_sources [is]
+- is_id
+- is_name
+- is_base_url
+- is_series_index_page
+- crt_dt
+- updt_dt
+
+example internet source full url to look up a title
+
+http://www.comicbookdb.com/title.php?ID=40345
+
+series [ser]
+- ser_id
+- ser_name
+- ser_year
+- ser_cover_price
+- cii_series
+- crt_dt
+- updt_dt
+
+is_series_ids [si]
+- issi_id
+- is_id
+- issi_series_id
+- ser_id
+- crt_dt
+- updt_dt
+
+execution_history [eh]
+- eh_id
+- exec_dt
+- is_id
+- exec_status
+
+posible values for exec_status:
+. FAILED
+. IN PROCESS
+. READY FOR REPROCESSING
+. INVOICE GENERATED
+. UNMATCHED ISSUE NUMBERS
+
+collectorz_invoice_input [cii]
+- cii_id
+- eh_id
+- cii_series
+- cii_issue
+- cii_issue_no
+- cii_issue_ext
+- computed_issue_num
+- lookup_status
+
+example of collectorz invoice input file
+
+"Series";"Issue";"Issue No.";"Issue Ext"
+"Fantastic Four, Vol. 4";"1A";"1";"A"
+"Fantastic Four, Vol. 4";"2A";"2";"A"
+
+is_series_header [ish]
+- ish_id
+- eh_id
+- ser_id
+
+is_series_index [isi]
+- isi_id
+- ish_id
+- isi_issue
+- isi_title
+- isi_story_arc
+- isi_cover_date
+
+-- get the current time
+select datetime("now");
+
+-- get the current local time
+select datetime("now", "localtime");
+
+
+last_insert_rowid()
+
+program
+-------
+
+* maintian the internet_sources, series and series_ids tables as needed outside of this program
+- when adding a new item to the series table: must enter both my series name and collectorz series name
+
+insert into series (ser_name, ser_name_sort, ser_year, ser_cover_price, cii_series, crt_dt, updt_dt) 
+values ('Amazing X-Men', 'amazing xmen', 2013, 3.99, 'Amazing X-Men, Vol. 2', datetime('now'), datetime('now'));
+
+= will also need to add a corresponding record to the is_series_id table (for the newly inserted ser_id's)
+  for each internet_sources record defined with the source's series id
+
+-- Amazing X-Men
+insert into is_series_ids (ser_id, is_id, issi_series_id, crt_dt, updt_dt) 
+values (51, 1, 42055, datetime('now'), datetime('now'));
+
+
+either pass in on the command line
+- the is_id (internet source id)	- the source to process the records on the cii table
+- the eh_id (execution history id)	- re-run mode, to reporcess unmatched cii records
+
+the re-run mode will by-pass loading the collectorz invoice input file and downloading the HTML
+
+create a new record on the execution_history table with the specified is_id
+
+load the collectorz invoice input file into the collectorz_invoice_input table 
+(with the eh_id from the newly inserted execution_history record)
+-- comput the issue number by taking the cii_issue_no field and concatenate it with the
+	cii_issue_ext field if the extension starts with a period, remove any space characters
+	keep any numeric characters [0-9] until a non-numeric non-space character is encountered
+	
+	for example if issue_no is 7 and issue_ext is .1A then the calculated issue num would be 7.1
+	
+read the internet_sources table for the specified is_id
+
+do a select distinct si_series_id, ser_id, cii_series
+join 
+from cii to ser (cii_id)
+from ser to si (ser_id)
+where si.is_id = specified is_id
+  and cii.eh_id = this execution's eh_id
+
+for each record returned: 
+1) insert a record into the is_series_header table
+2) use the si_series_id along with the is_base_url, is_series_index_page to download the HTML and parse it...
+
+[ see "cbdb example series index page.png" for an example of the data at cb db ]
+[ http://www.comicbookdb.com/title.php?ID=1286 ]
+
+for each record parsed insert it into the is_series_index table
+
+for each record in the collectorz_invoice_input table for the ih_id
+attempt to find the corresponding issue number for the series in the is_series_index table
+
+if the issue is found then update the lookup_status to matched, else udate it with a staut of unmatched
+
+if all issues are found then create the invoice output file by doing a
+
+select ser.ser_name as title, ser.ser_year as year, null as notes, isi.isi_cover_date as cover_date, 
+	cii.computed_issue_num as num, ser.ser_cover_price as cover_price
+
+join 
+from ser to cii (cii_id)
+from ser to ish (ser_id)
+from ish to isi (is_id)
+where cii.eh_id & ish.eh_id = this execution's eh_id
+
+
+
+
+===========
+
+steps for adding a series
+-------------------------
+
+after scanning UPCs into collectorz, export input file and execute the get_cvr_dt.php script
+look for any Warnings about titles not being in the series table, this could be for 1 of 2 
+reasons. 1) collectorz has renamed a title 2) it is the first time we've purchased the title.
+
+if number 2 above, execute the following insert statement for each title, replacing values as needed:
+
+insert into series (ser_name, ser_name_sort, ser_year, ser_cover_price, cii_series, crt_dt, updt_dt) 
+values ('Black Widow', 'black widow', 2014, 3.99, 'Black Widow, Vol. 6', datetime('now'), datetime('now'));
+
+ser_name:			how I want the title to appear
+ser_name_sort:		sorted version of the title, all lowercase, punctuation removed
+ser_year:			the year the first issue was published
+ser_cover_price:	the current cover price
+cii_series:			the name of the title as it appears in the export input file
+
+for ser_name, look up the title on http://www.comicbookdb.com
+note the TITLE ID, 1st issue pub date, cover price
+
+After all titles have been inserted execute the following SQL:
+
+select * from series order by ser_id desc;
+
+note the ser_id for each new title
+
+for each newly added issue execute the following SQL:
+
+insert into is_series_ids (ser_id, is_id, issi_series_id, crt_dt, updt_dt) 
+values (66, 1, 36484, datetime('now'), datetime('now'));
+
+ser_id:				ser_id from the series table
+issi_series_id:		the title ID from comicbookdb.com
+is_id:				should be 1 if using comicbookdb.com
+
+
+
