@@ -10,3 +10,6 @@ input file is named:  cz_issues_input.txt
 output file is named: invoice_ouput.csv  
 log file is named:    out.txt  
 
+## Previews Parsing
+This is the original previews parsing code that is written in PHP  
+This is the main code that will be converted to Python
