@@ -229,6 +229,7 @@ if (substr($argv[1], 1, 1) == 'r') {
 		
 		// track how many issues for each series are on the input file
 		if (! array_key_exists($fields[2], $file_series)) {
+		    // is this a bug? should it be initialized to a value of 1 instead of a value of 0?
 			$file_series[$fields[2]] = 0;
 		} else {
 			$file_series[$fields[2]]++;
