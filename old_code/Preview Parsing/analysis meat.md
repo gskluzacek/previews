@@ -73,5 +73,128 @@ Normally, the search starts from the beginning of the subject string. The option
 
 ### get the table html for the issue rows
 
-$rc = preg\_match('/\<table border="0" cellpadding="1" cellspacing="0">(.*)\<\\/table>\<br>\<br>\<br>/', $html, $matches);
-if the 
+preg\_match('/\<table border="0" cellpadding="1" cellspacing="0">(.*)\<\\/table>\<br>\<br>\<br>/', $html, $matches);  
+
+if the the regex does not match then  
+exits the scrpt  
+else  
+$table\_html = $matches[1];  
+end if
+
+### put all html issue rows into an array
+
+preg\_match\_all('/\<tr>(.*?)\<\\/tr>/', $table_html, $matches);
+
+$rows\_html\_array = $matches[1];  
+array\_shift($rows\_html\_array);
+
+### loop over each issue row in $rows\_html\_array
+
+#### parse out each html cell from the html issue row
+
+preg_match_all('/\<td.*?' . '>(.*?)\<\\/td>/', $row_html, $matches);  
+$cells\_html\_array = $matches[1];
+
+$row\_type\_ind = null;
+$cbdb\_iss\_id = null;
+$var\_desc = 'Std Variant';
+$date = null;
+
+
+#### process cell #1: $cells\_html\_array[0]
+
+preg\_match('/\<a href="issue.php\\?ID=(\\d*)".*>(.*?)\<\\/a>|&nbsp;/', $cells_html_array[0], $matches);  
+
+if count($matches) == 3, then  
+non-varient issue (NV)  
+$var\_seq = 1;  
+$cbdb_\iss\_id = $matches[1];  
+$iss\_num = $matches[2];  
+$iss\_num = calc_iss_num($iss\_num, $cbdb\_iss\_id, $dups\_ctr);  
+$story\_arc\_id = null;  
+$story\_arc\_name = null;  
+if count($matches) == 1, then no-op  
+else error
+
+#### process cell #3: $cells\_html\_array[2]
+
+preg\_match('/\<a href="issue.php\\?ID=(\\d*)".*>\\(?(.*?)\\)?\<\\/a>|&nbsp;/', $cells_html_array[2], $matches);  
+
+if count($matches) == 3, then  
+if non-varient issue then  
+$iss\_name = $matches[2];  
+else  
+varient issue (VAR)  
+$cbdb\_iss\_id = $matches[1];  
+$var\_desc = $matches[2];  
+if count($matches) == 1, then  
+multiple story arcs (MSA)  
+$var\_desc = "";  
+else error
+
+#### process cell #5: $cells\_html\_array[4]
+
+preg\_match('/\<a href="storyarc.php\\?ID=(\\d*)".*>(.*?)\<\\/a>|&nbsp;/', $cells_html_array[4], $matches);
+
+if count($matches) == 3, then  
+$story\_arc\_id = $matches[1];  
+$story\_arc\_name = $matches[2];   
+if count($matches) == 1, then no-op  
+else error
+
+#### process cell #7: $cells\_html\_array[6]
+
+if ('NV' || 'VAR') {  
+$date\_str = (strtoupper(substr($cells\_html\_array[6], -4)) == '\<BR>' ?  
+substr($cells\_html\_array[6], 0, -4) :   
+$cells\_html\_array[6]);  
+$date\_array = explode(' ', $date\_str);  
+
+
+			
+				// strip of the trailing <BR> tag if there is one
+               $date_str = (strtoupper(substr($cells_html_array[6], -4)) == '<BR>' ? 
+                       trim(substr($cells_html_array[6], 0, -4)) : 
+                       trim($cells_html_array[6]));
+						
+				// break the string into its components 
+				// if 2 elements --> month (or another word) & year
+				// if 3 elements --> {early | late }, month & year
+				$date_array = explode(' ', $date_str);
+			
+				// if only 1 element exists it is the year
+				if (count($date_array) == 1) {
+					$date_disp = $date_array[0];
+					$date = "$date_disp-01-01";
+				} elseif (count($date_array) == 3) {
+					$day = ( strtoupper($date_array[0]) == 'LATE' ? 15 : 1 );
+					$time_stamp = strtotime("{$date_array[1]} {$date_array[2]}");
+					$date = date('Y-m', $time_stamp) . '-' . str_pad($day, 2, '0', STR_PAD_LEFT);
+					$date_disp = $date_array[0] . ' ' . date('M-Y', $time_stamp);
+				// else if the first word is annual then we only have the year
+				} elseif (strtoupper($date_array[0]) == 'ANNUAL') {
+					$date_disp = $date_array[1];
+					$date = "$date_disp-01-01";
+				// else have just month and year
+				} else {
+					$time_stamp = strtotime($date_str);
+					$date = date('Y-m', $time_stamp) . '-01';
+					$date_disp = date('M-Y', $time_stamp);
+				}
+}  
+			
+if (MSA)  
+continue
+
+			$issues_list[] = array(
+				'isi_issue_id'			=> $cbdb_iss_id,
+				'isi_issue_type'		=> $row_type_ind,
+				'isi_issue_num'			=> $iss_num,
+				'isi_issue_name'		=> ( strlen($iss_name) == 0 ? null : $iss_name ),
+				'isi_variant_seq'		=> $var_seq++,
+				'isi_variant_desc'		=> ( strlen($var_desc) == 0 ? null : $var_desc ),
+				'isi_cover_dt_disp'		=> $date_disp,
+				'isi_cover_dt'			=> $date,
+				'isi_story_arc_id'		=> ( strlen($story_arc_id)   == 0 ? null : $story_arc_id ),
+				'isi_story_arc_name'	=> ( strlen($story_arc_name) == 0 ? null : $story_arc_name )
+			);
