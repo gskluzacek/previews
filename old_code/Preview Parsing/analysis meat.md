@@ -4,7 +4,8 @@ from the get\_cvr\_dt.php script
 
 ## get\_iss\_list\_html()
 
-This function uses curl to download the specified URL and saves it into a tempoarary file
+This function uses curl to download the specified URL and saving the response headers into a tempoarary file.  
+The html is returned as a string by the funciton
 
 ### sys\_get\_temp\_dir()
 
@@ -18,6 +19,7 @@ The directory where the temporary filename will be created.
 prefix  
 The prefix of the generated temporary filename.  
 
+called with params of: sys\_get\_temp\_dir(), "http"
 used to create a temp file to write the response headers to.
 
 ### curl_setopt()
@@ -42,4 +44,34 @@ set to --> file stream resource opened with fopen()
 4. all \n and \r characters are removed from the html
 5. read the headers into an array & check the 1st one (index 0) to verify the http status code is 200
 
+**step 4 above is very important so that we can user regex later to search across all text**
+
 ## get\_series\_issue\_list()
+
+uses php regular expression and matching functions
+
+#### preg\_match
+
+preg\_match ( string $pattern , string $subject [, array &$matches [, int $flags = 0 [, int $offset = 0 ]]] )
+
+pattern  
+The pattern to search for, as a string.
+
+subject  
+The input string.
+
+matches  
+If matches is provided, then it is filled with the results of search. $matches[0] will contain the text that matched the full pattern, $matches[1] will have the text that matched the first captured parenthesized subpattern, and so on.
+
+flags  
+flags can be the following flag:
+
+PREG_OFFSET_CAPTURE  
+If this flag is passed, for every occurring match the appendant string offset will also be returned. Note that this changes the value of matches into an array where every element is an array consisting of the matched string at offset 0 and its string offset into subject at offset 1.
+offset
+Normally, the search starts from the beginning of the subject string. The optional parameter offset can be used to specify the alternate place from which to start the search (in bytes).
+
+### get the table html for the issue rows
+
+$rc = preg\_match('/<table border="0" cellpadding="1" cellspacing="0">(.*)<\/table><br><br><br>/', $html, $matches);
+if the 
