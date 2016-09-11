@@ -1,4 +1,4 @@
-# Analysis: get_cvr_dt.php
+# Analysis: get\_cvr\_dt.php
 
 no included files, so the script is stand alone
 
@@ -88,11 +88,35 @@ the database file is named: comics_invoicing.db
 the database file should be located in the same directory as the php script  
 using foreign key support
 
-### a view ???
+### relationships
 
-fnl\_rpt_1
+- execution\_history has a record for each time the program is executed (eh_id)
+- it records the date, is\_id, and status
 
-### tables used in the script
+- collectorz\_invoice\_input contains a record (cii_id) for each issue from a given 
+purchase to have its cover date looked up.
+- this table is loaded with the cz\_issues\_input.txt file (exported from collectorz)
+- the records for a given purchase are grouped by its execution run (eh\_id)
+
+- internet\_sources contains a record for each internet source (is\_id) along with the 
+corresponding base url & title index web page (the page that lists all of a series issues)
+
+- the series table has an id (ser\_id) for each series that I collect
+- I track the series name (ser\_name) [as I like it] and the series year (ser\_year)
+- this maps to the series name (cii_series) from collectorz
+
+- the is\_series\_ids has an id (issi\_id) that maps my series id (ser\_id) to each 
+internet source's (is\_id) corresponding series id (issi\_series\_id)
+
+- is\_series\_header (ish\_id) records each ser\_id to be processed for a given execution 
+(eh\_id)
+
+- is\_html has a record for each ser\_id to be processed (ish\_id)
+
+- is\_series\_index has a record for each issue parsed from the htm series index that was
+downloaded
+
+### tables 
 
 #### execution\_history
 
@@ -124,3 +148,171 @@ posible values for exec_status:
 ### is\_series\_ids
 ### is\_series\_header
 ### is\_series\_index
+
+### a view
+
+fnl\_rpt_1
+
+CREATE VIEW fnl\_rpt\_1 as
+select 
+        cii.cii\_release\_dt, 
+        cii.cii\_cover\_dt\_disp, 
+        cii.cii\_cover\_dt, 
+        cii.cii\_series, 
+        cii.cii\_issue, 
+        cii.cii\_edition, 
+        cii.cii\_full\_title,
+        cii.lookup\_status, 
+        ser.ser\_id, 
+        ser.ser\_name, 
+        ser.ser\_name\_sort, 
+        ser.ser\_year, 
+        ser.ser\_cover\_price, 
+        isi2.isi\_issue\_num, 
+        isi2.isi\_cover\_dt\_disp, 
+        cii.computed\_issue\_num, 
+        isi2.isi\_cover\_dt, 
+        ifnull(isi2.rec\_type, 'Not Matched') as rec\_type, 
+        isi2.isi\_issue\_name, 
+        isi2.isi\_story\_arc, 
+        isi2.isi\_variant\_seq, 
+        isi2.isi\_variant\_desc,
+        issi.issi\_series\_id,
+        isi2.isi\_issue\_id, 
+        isi2.isi\_story\_arc\_id,
+        ish.ish\_id,
+        ish.eh\_id
+from collectorz\_invoice\_input cii
+join series ser 
+        on ser.cii\_series  = cii.cii\_series
+join is\_series\_header ish 
+        on ish.ser\_id      = ser.ser\_id 
+       and ish.eh\_id       = cii.eh\_id
+join is\_series\_ids issi 
+        on issi.ser\_id     = ser.ser\_id
+left join (
+    select 
+            isi.ish\_id, 
+            isi.isi\_issue\_num, 
+            t.rec\_cnt, 
+            isi.isi\_cover\_dt\_disp, 
+            isi.isi\_cover\_dt, 
+            'Single Date' as rec\_type, 
+            isi.isi\_issue\_name, 
+            isi.isi\_story\_arc, 
+            isi.isi\_story\_arc\_id, 
+            isi.isi\_issue\_id, 
+            isi.isi\_issue\_type, 
+            isi.isi\_variant\_seq, 
+            isi.isi\_variant\_desc
+    from is\_series\_index isi 
+    join (
+        select 
+                count(*) as rec\_cnt, 
+                isi.ish\_id, 
+                isi.isi\_issue\_num
+        from is\_series\_index isi
+        join is\_series\_header ish 
+                on ish.ish\_id = isi.ish\_id
+        group by isi.ish\_id, isi.isi\_issue\_num
+        having count(*) = 1
+    ) t 
+            on t.ish\_id = isi.ish\_id 
+           and t.isi\_issue\_num = isi.isi\_issue\_num
+    union
+    select distinct 
+            isi.ish\_id, 
+            isi.isi\_issue\_num, 
+            t.rec\_cnt, 
+            isi.isi\_cover\_dt\_disp, 
+            isi.isi\_cover\_dt, 
+            'Single Distinct Date' as rec\_type, 
+            isi.isi\_issue\_name, 
+            isi.isi\_story\_arc, 
+            isi.isi\_story\_arc\_id, 
+            isi.isi\_issue\_id, 
+            isi.isi\_issue\_type, 
+            isi.isi\_variant\_seq, 
+            isi.isi\_variant\_desc 
+    from is\_series\_index isi 
+    join (
+        select 
+                count(*) as rec\_cnt, 
+                ft.ish\_id, 
+                ft.isi\_issue\_num
+        from (
+            select distinct 
+                    isi.ish\_id, 
+                    isi.isi\_issue\_num, 
+                    isi.isi\_cover\_dt 
+            from is\_series\_index isi
+            join (
+                    select 
+                            count(*), 
+                            isi.ish\_id, 
+                            isi.isi\_issue\_num
+                    from is\_series\_index isi
+                    join is\_series\_header ish 
+                            on ish.ish\_id = isi.ish\_id
+                    group by isi.ish\_id, isi.isi\_issue\_num
+                    having count(*) != 1
+            ) as gt 
+                    on gt.ish\_id = isi.ish\_id 
+                   and gt.isi\_issue\_num = isi.isi\_issue\_num
+        ) ft
+        group by ft.ish\_id, ft.isi\_issue\_num
+        having count(*) = 1
+    ) t 
+            on t.ish\_id = isi.ish\_id 
+           and t.isi\_issue\_num = isi.isi\_issue\_num
+    where isi.isi\_variant\_seq = 1
+    union
+    select 
+            isi.ish\_id, 
+            isi.isi\_issue\_num, 
+            tt.rec\_cnt, 
+            isi.isi\_cover\_dt\_disp, 
+            isi.isi\_cover\_dt, 
+            'Multiple Dates' as rec\_type, 
+            isi.isi\_issue\_name, 
+            isi.isi\_story\_arc, 
+            isi.isi\_story\_arc\_id, 
+            isi.isi\_issue\_id,  
+            isi.isi\_issue\_type, 
+            isi.isi\_variant\_seq, 
+            isi.isi\_variant\_desc
+    from is\_series\_index isi
+    join (
+        select 
+                ft.ish\_id, 
+                ft.isi\_issue\_num, 
+                count(*) as rec\_cnt
+        from (
+            select distinct 
+                    isi.ish\_id, 
+                    isi.isi\_issue\_num, 
+                    isi.isi\_cover\_dt
+            from is\_series\_index isi
+            join (
+                select 
+                        count(*), 
+                        isi.ish\_id, 
+                        isi.isi\_issue\_num
+                from is\_series\_index isi
+                join is\_series\_header ish 
+                        on ish.ish\_id = isi.ish\_id
+                group by isi.ish\_id, isi.isi\_issue\_num
+                having count(*) != 1
+            ) as gt 
+                    on gt.ish\_id = isi.ish\_id 
+                   and gt.isi\_issue\_num = isi.isi\_issue\_num
+        ) ft
+        group by ft.ish\_id, ft.isi\_issue\_num
+        having count(*) != 1
+    ) tt 
+            on tt.ish\_id = isi.ish\_id 
+           and tt.isi\_issue\_num = isi.isi\_issue\_num
+) isi2 
+        on isi2.ish\_id = ish.ish\_id 
+       and isi2.isi\_issue\_num = cii.computed\_issue\_num;
+
