@@ -73,5 +73,5 @@ Normally, the search starts from the beginning of the subject string. The option
 
 ### get the table html for the issue rows
 
-$rc = preg\_match('/<table border="0" cellpadding="1" cellspacing="0">(.*)<\/table><br><br><br>/', $html, $matches);
+$rc = preg\_match('/\<table border="0" cellpadding="1" cellspacing="0">(.*)\<\\/table>\<br>\<br>\<br>/', $html, $matches);
 if the 
