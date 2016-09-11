@@ -108,7 +108,7 @@ preg\_match('/\<a href="issue.php\\?ID=(\\d*)".*>(.*?)\<\\/a>|&nbsp;/', $cells_h
 if count($matches) == 3, then  
 non-varient issue (NV)  
 $var\_seq = 1;  
-$cbdb_\iss\_id = $matches[1];  
+$cbdb\_iss\_id = $matches[1];  
 $iss\_num = $matches[2];  
 $iss\_num = calc_iss_num($iss\_num, $cbdb\_iss\_id, $dups\_ctr);  
 $story\_arc\_id = null;  
