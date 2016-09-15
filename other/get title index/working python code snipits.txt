@@ -1,0 +1,192 @@
+import requests
+from lxml import html
+from lxml import etree
+import re
+
+url = "http://www.comicbookdb.com/title.php?ID=38270"
+
+page = requests.get(url)
+tree = html.fromstring(page.content)
+
+// gets all the <tr> & <tbody> tags with the issue data
+tags = tree.xpath("//a[@class='page_link'][text()='Issue']/ancestor::table[1]/child::*")[1:]
+
+// collects all the <tr> tags into a 1 level array and removes <tbody> tags
+tr_tags = []
+for tag in tags:
+  if tag.tag == 'tr':
+    tr_tags.append(tag)
+  else:
+    tbody = tag
+    for tr_tag in tbody:
+      tr_tags.append(tr_tag)
+
+// create 4 columns that correspond to the columns containing isuue data
+// each column contains the <td> tag corresponding to the index row
+cols = [[],[],[],[]]
+for tr_tag in tr_tags:
+  for i in range(0, 8, 2):
+    cols[(i//2)].append(tr_tag[i])
+
+s = set()
+for td in cols[3]:
+  s.add(len(td))
+
+
+// print all the data from column 1 where there are 3 child elments to the 
+for td in cols[0]:
+  if len(td) == 3:
+    print(html.tostring(td))
+
+
+// gets the <a> tags with all the issue numbers
+tree.xpath("//a[@class='page_link']")
+
+
+file = '/Users/gskluzacek/Documents/Development/REPOS/previews/old_code/Preview Parsing/sample.html'
+f = open(file, 'r', -1, 'windows-1251')
+src_html = f.read()
+f.close()
+
+// -----------
+
+def getIssueNumText(e):
+    global issue_num, raw_issue_num
+    if len(e) == 0:
+        raw_issue_num = ''
+        return issue_num
+    elif len(e) == 2 or len(e) == 3:
+        raw_issue_num = e[len(e) - 2].text
+        if len(raw_issue_num) != 0:
+            issue_num = raw_issue_num
+        if len(raw_issue_num) != 0 or len(issue_num) != 0:
+            return issue_num
+        else:
+            raise Exception('ERROR: input element: `%s` has a blank issue number' % (html.tostring(e)))
+    else:
+        raise Exception('ERROR: input element: `%s` with `%s` child nodes, does not have a valid number of child nodes (0, 2 or 3)' % (html.tostring(e), len(e)))
+
+def getIssueIdText(e):
+    ptrn_issue_id = re.compile(r'issue.php\?ID=(\d*)')
+    if len(e) == 2:
+        href = e[0].get('href')
+        if href is not None:
+            match = ptrn_issue_id.match(href)
+            if match is not None:
+                issue_id = match.group(1)
+                if len(issue_id) == 0:
+                    return None
+                else:
+                    return issue_id
+            else:
+                raise Exception('ERROR: input element: `%s` with a href value of `%s` does not have a href value (starts with `issue.php?ID=`)' % (html.tostring(e), href))
+        else:
+            raise Exception('ERROR: input element: `%s` does not have a `href` attribute' % (html.tostring(e)))
+    else:
+        raise Exception('ERROR: input element: `%s` with `%s` child nodes, does not have a valid number of child nodes (2)' % (html.tostring(e), len(e)))
+
+
+def getIssueTitleText(e):
+    global raw_issue_num, issue_title
+    if len(e) == 2:
+        if len(raw_issue_num) != 0:
+            tmp_title = e[0].text
+            if tmp_title is None:
+                issue_title = ''
+            else:
+                issue_title = tmp_title
+        return issue_title
+    else:
+        raise Exception('ERROR: getIssueTitleText() - input element: `%s` with `%s` child nodes, does not have a valid number of child nodes (2)' % (html.tostring(e), len(e)))
+
+
+
+class TitleIndex:
+    def __init__(self, title_id, html = None):
+        if (title != 0):
+            self.title_id = title_id
+            self.url = 'http://www.comicbookdb.com/title.php?ID=' + str(title_id)
+            page = requests.get(self.url)
+            self.html = page.content
+        else:
+            self.tree = html.fromstring(html)
+            self.title_id = None
+            self.url = None
+
+        self.tree = html.fromstring(self.html)
+
+        // gets all the <tr> & <tbody> tags with the issue data
+        tags = self.tree.xpath("//a[@class='page_link'][text()='Issue']/ancestor::table[1]/child::*")[1:]
+
+        // collects all the <tr> tags into a 1 level array and removes <tbody> tags
+        self.tr_tags = []
+        for tag in tags:
+            if tag.tag == 'tr':
+                self.tr_tags.append(tag)
+            else:
+                tbody = tag
+                for tr_tag in tbody:
+                    self.tr_tags.append(tr_tag)
+
+        // create 4 columns that correspond to the columns containing isuue data
+        // each column contains the <td> tag corresponding to the index row
+        self.cols = [[],[],[],[]]
+        for tr_tag in self.tr_tags:
+            for i in range(0, 8, 2):
+                self.cols[(i//2)].append(tr_tag[i])
+        
+        self.issue_num = ''
+        self.issue_title = ''
+        self.raw_issue_num = ''
+
+    def getIssueNumText(self, n):
+        e = self.cols[0][n]
+        
+        if len(e) == 0:
+            self.raw_issue_num = ''
+            return self.issue_num
+        elif len(e) == 2 or len(e) == 3:
+            self.raw_issue_num = e[len(e) - 2].text
+            if len(self.raw_issue_num) != 0:
+                self.issue_num = self.raw_issue_num
+            if len(self.raw_issue_num) != 0 or len(self.issue_num) != 0:
+                return self.issue_num
+            else:
+                raise Exception('ERROR: getIssueNumText() - input element: `%s` has a blank `issue number`' % (html.tostring(e)))
+        else:
+            raise Exception('ERROR: getIssueNumText() - input element: `%s` with `%s` child nodes, does not have a valid number of child nodes (0, 2 or 3)' % (html.tostring(e), len(e)))
+    
+    def getIssueTitleText(self, n):
+        e = self.cols[1][n]
+        if len(e) == 2:
+            if len(self.raw_issue_num) != 0:
+                tmp_title = e[0].text
+                if tmp_title is None:
+                    self.issue_title = ''
+                else:
+                    self.issue_title = tmp_title
+            return self.issue_title
+        else:
+            raise Exception('ERROR: getIssueTitleText() - input element: `%s` with `%s` child nodes, does not have a valid number of child nodes (2)' % (html.tostring(e), len(e)))
+
+    def getIssueIdText(self, n):
+        ptrn_issue_id = re.compile(r'issue.php\?ID=(\d*)')
+
+        e = self.cols[1][n]
+
+        if len(e) == 2:
+            href = e[0].get('href')
+            if href is not None:
+                match = ptrn_issue_id.match(href)
+                if match is not None:
+                    issue_id = match.group(1)
+                    if len(issue_id) != 0:
+                        return issue_id
+                    else:
+                        raise Exception('ERROR: getIssueIdText() - input element: `%s` has a blank `issue id`' % (html.tostring(e)))
+                else:
+                    raise Exception('ERROR: getIssueIdText() - input element: `%s` with a href value of `%s` does not have a href value (starts with `issue.php?ID=`)' % (html.tostring(e), href))
+            else:
+                raise Exception('ERROR: getIssueIdText() - input element: `%s` does not have a `href` attribute' % (html.tostring(e)))
+        else:
+            raise Exception('ERROR: getIssueIdText() - input element: `%s` with `%s` child nodes, does not have a valid number of child nodes (2)' % (html.tostring(e), len(e)))
