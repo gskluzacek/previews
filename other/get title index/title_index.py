@@ -213,7 +213,8 @@ class TitleIndex:
                 'valid number of child nodes (0 or 1)'.format(html.tostring(e), len(e)))
 
 
-file = '/Users/gskluzacek/Documents/Development/REPOS/previews/old_code/Preview Parsing/sample.html'
+# file = '/Users/gskluzacek/Documents/Development/REPOS/previews/old_code/Preview Parsing/sample.html'
+file = "../../old_code/Preview Parsing/sample.html"
 f = open(file, 'r', -1, 'windows-1251')
 src_html = f.read()
 f.close()
