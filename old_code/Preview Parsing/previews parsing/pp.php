@@ -92,6 +92,7 @@ require_once 'db_common.inc.php';
 // 10 - Supplier Out of Business
 //
 // Caution codes:
+// http://www.diamondcomics.com/Home/1/1/3/108?articleID=25151
 //
 // International Rights (I-Rights) — the item is restricted into what countries it can be sold.
 //   0 = No International Rights restriction
@@ -101,15 +102,15 @@ require_once 'db_common.inc.php';
 //   0 = No Content disclaimer
 //   1 = Content disclaimer enforced
 //
+// Ship Date Changes — the final shipping date may differ or change from the scheduled ship date.
+//   0 = Product will ship according to the standard shipping schedule (within 90 days of the Previews cover date month)
+//   1 = Product may ship an additional 30 days **beyond** the __scheduled__ ship date
+//   2 = Product may ship an additional 60 days **beyond** the __scheduled__ ship date
+//   3 = Product may ship an additional 90 days **beyond** the __scheduled__ ship date
+//   4 = Product may ship at any time **beyond** the __scheduled__ ship date
+//
 // for shipping updates, go to: 
 // http://www.previewsworld.com/Home/1/1/71/957
-// Ship Date Changes — the final shipping date may differ or change from the scheduled ship date.
-//   0 = Product will ship according to schedule
-//   1 = Product may ship an additional 60 days beyond scheduled ship date
-//   2 = Additional 90 days beyond scheduled ship date
-//   3 = Additional 120 days beyond scheduled ship date
-//   4 = Product may ship at any time beyond scheduled ship date
-
 
 
 //mysqli_report(MYSQLI_REPORT_STRICT);
