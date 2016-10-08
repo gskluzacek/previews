@@ -1,47 +1,39 @@
-directory Contents
+# directory Contents
 
-for directory:
-/previews/old_code/Preview Parsing/previews parsing
+**For Directory:** /previews/old_code/Preview Parsing/previews parsing
 
-=================
-This directory contains several folders and many Files
+## This directory contains several folders and many Files
 
-folders:
-- originals
-- pdf
-- temp
-- test
-- yyyy-mm_links 
+**folders:**
+* originals
+* pdf
+* temp
+* test
+* yyyy-mm_links 
 
-=================
-Most useful looking files:
+## Most useful looking files:
 
-- headings.xlsx
-- lf.PHP
-- pp.PHP		see output file: pp_out.txt
-- tt.php		see output file: tt_out.txt
-- file: `bipolar_2014_08_16.sql`
-	table: previews_hdg_lvls
-	table: previews_raw
-	table: previews_lines
-	table: previews_hdr
+* headings.xlsx
+* lf.PHP
+* pp.PHP		see output file: pp_out.txt
+* tt.php		see output file: tt_out.txt
+* file: `bipolar_2014_08_16.sql`
+* 	table: previews_hdg_lvls
+* 	table: previews_raw
+* 	table: previews_lines
+* 	table: previews_hdr
 
-=================
+***
 
+## PHP source code - main directory
 
--------------------------------------------------
-PHP source code - main directory
--------------------------------------------------
-
-Most interesting PHP scripts
------------------------
-lf.PHP
-pp.PHP
-tt.php
+**Most interesting PHP scripts**
+* lf.PHP
+* pp.PHP
+* tt.php
 
 
-db_common.inc.php
------
+### db_common.inc.php
 contains a single function named `crtsql()` which will take an input sql string with place
 holders and return a SQL statement with the 
 
