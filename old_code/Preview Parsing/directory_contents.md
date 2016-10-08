@@ -11,17 +11,17 @@
 * test
 * yyyy-mm_links 
 
-## Most useful looking files:
+## Most useful looking scripts/tables/files:
 
-* headings.xlsx
-* lf.PHP
-* pp.PHP		see output file: pp_out.txt
-* tt.php		see output file: tt_out.txt
+* excel spreadsheet: `headings.xlsx`  
+* script: `lf.PHP`
+* script: `pp.PHP` -- see output file: pp_out.txt
+* script: `tt.php` -- see output file: tt_out.txt  
 * file: `bipolar_2014_08_16.sql`
-* 	table: previews_hdg_lvls
-* 	table: previews_raw
-* 	table: previews_lines
-* 	table: previews_hdr
+    * table: previews_hdg_lvls
+    * table: previews_raw
+    * table: previews_lines
+    * table: previews_hdr
 
 ***
 
@@ -42,8 +42,8 @@ holders and return a SQL statement with the
 reads all the COF files and loads them into the database
 
 **loads the folloing tables:**
-* reviews_hdr   (period_dt, period_str, ident_str, local_file, url_to_cof) 
-* previews_lines (pvh_id, pvl_seq, line_text)
+* reviews_hdr...... (period_dt, period_str, ident_str, local_file, url_to_cof) 
+* previews_lines... (pvh_id, pvl_seq, line_text)
 
 one line of text _(unaltered)_ from the COF file is inserted per record into the line_text column.
 
@@ -77,35 +77,32 @@ _see output file: pp_out.txt_
 This program reads the previews_lines table _(by pvh_id)_ and splits it into fields _(tab 
 delimited)_.
 
-It sets the sol_text to `[ndx-2]` _(aka the 3rd field)_ without any processing or 
-parsing.
+It sets the sol_text to `[ndx-2]` _(aka the 3rd field)_ without any processing or parsing.
 
 It then performs minor parsing to populate the other fields.
 
-~~~~~~~~~~~~~~~~~~~~~~~
-select pvh_id from previews_hdr where proc_status in ('NEW', 'REPROCESS') order by period_dt
-for each pvh_id
-  select pvl_id, pvl_seq, line_text, override_pvhl_id from previews_lines where pvh_id = ? order by pvl_seq
-  for each line
-  	parse the line
-  	insert into the previews_raw table populating the following columns:
-  		- pvr_id [auuto increment]
-  		- pvh_id
-  		- pv_seq
-  		- pvl_id
-  		- pv_type
-  		- pv_value
-  		- h1_pvhl_id
-  		- h2_pvhl_id
-  		- h3_pvhl_id
-  		- pv_source
-  		- sol_page
-  		- sol_code
-  		- sol_text
-  		- release_dt
-  		- unit_price
-  		- pi_ind
-~~~~~~~~~~~~~~~~~~~~~~~
+    select pvh_id from previews_hdr where proc_status in ('NEW', 'REPROCESS') order by period_dt
+    for each pvh_id
+      select pvl_id, pvl_seq, line_text, override_pvhl_id from previews_lines where pvh_id = ? order by pvl_seq
+      for each line
+      	parse the line
+      	insert into the previews_raw table populating the following columns:
+      	    - pvr_id [auuto increment]
+      	    - pvh_id
+      	    - pv_seq
+      	    - pvl_id
+      	    - pv_type
+      	    - pv_value
+      	    - h1_pvhl_id
+      	    - h2_pvhl_id
+      	    - h3_pvhl_id
+      	    - pv_source
+      	    - sol_page
+      	    - sol_code
+      	    - sol_text
+      	    - release_dt
+      	    - unit_price
+      	    - pi_ind
 
 
 ### str2dt.php
@@ -139,23 +136,22 @@ Containing Table Structures and data for the following tables:
 
 * code_hdr
 * code_values
-* code_attribs
-
+* code_attribs  
+  
 * users
 * pull_lists
 * pl_series
-* pl_publishers
-
+* pl_publishers  
+  
 * previews_hdg_lvls
 * previews_hdr
 * previews_lines
 * previews_raw
 
-_**Note:**_
+_**Note:**_  
 PL stands for pull list
 
 all tables except as noted have the following columns
-
 * crt_dt
 * crt_id
 * updt_dt (*)
@@ -166,6 +162,8 @@ all tables except as noted have the following columns
 * previews_raw
 * previews_lines
 * previews_hdr
+
+## TABLE DEFINITIONS
 
 ### code_attribs
 * ca_id			PK
@@ -189,7 +187,7 @@ all tables except as noted have the following columns
 * ppub_id			PK
 * pub_abrev
 * pub_short_name
-* pub_long_name
+* pub_long_name  
 _UNIQUE on:: pub_abrev, pub_short_name_
 
 ### pl_series
@@ -207,7 +205,7 @@ _UNIQUE on:: pub_abrev, pub_short_name_
 * pvhl_level
 * parent_pvhl_id	FK -- previews_hdg_lvls
 * pull_list_ind
-* heading_name
+* heading_name  
 _UNIQUE on:: parent_pvhl_id, heading_name_
 
 What is pull_list_ind and how is it used?
@@ -223,13 +221,12 @@ What is pull_list_ind and how is it used?
 
 _a table of when each COF file was processed_
 
-
 ### previews_lines *
 * pvl_id			PK
 * pvh_id			FK -- previews_hdr
 * pvl_seq
 * line_text
-* override_pvhl_id		if set and is not 0, then use revers heading lookup (??? need more info on what this is)
+* override_pvhl_id		if set and is not 0, then use revers heading lookup (??? need more info on what this is)  
 _UNIQUE on:: pvh_id, pvl_seq_
 
 What is override_pvhl_id and how is it used?
@@ -273,72 +270,61 @@ What is override_pvhl_id and how is it used?
 * other_designations
 
 #### pv_type(s)
-102,774		ITEM			if the sol_code is populated, its an ITEM
-    799		BLANK			sol_code & pv_vale are both blank
- 23,017		PAGE			sol_code is blank and pv_value = PAGE
-	 52		IDENT			if the solicitation code is blank and the value matches the reglare expression for the identificaiton line, then it is a identification line
-  1,135		H3				if none of the above and if lvl 2 is set - check for lvl 3
-  8,864		H2				if none of the above and if lvl 1 or 2 is set - check for lvl 2
-    702		H1				if none of the above - check for lvl 2
-  2,094		NOTFOUND		if none of the above then not found
+    102,774		ITEM			if the sol_code is populated, its an ITEM
+        799		BLANK			sol_code & pv_vale are both blank
+     23,017		PAGE			sol_code is blank and pv_value = PAGE
+    	 52		IDENT			if the solicitation code is blank and the value matches the reglare expression for the identificaiton line, then it is a identification line
+      1,135		H3				if none of the above and if lvl 2 is set - check for lvl 3
+      8,864		H2				if none of the above and if lvl 1 or 2 is set - check for lvl 2
+        702		H1				if none of the above - check for lvl 2
+      2,094		NOTFOUND		if none of the above then not found
 
+### pull_lists
+* pl_id			PK
+* usr_id			FK -- users
+* pser_id			FK -- pl_series
+* iss_num_start
+* variant_ind
+* variant_qty
+* notes
+* status
 
+### users
+* usr_id			PK
+* login
+* first_nm
+* last_nm
+* email
+* email_sts
+* password
+* last_login_dt
+* acct_sts
+* role
+* twitter
+* facebook
+* bio
+* phone_home
+* phone_mobile
+* phone_work
+* address_1
+* address_2
+* city
+* state
+* zip
+* county
+* country
+* sec_question
+* sec_answer
+* pull_list_sts
+* resume_dt
+* pull_list_notes. 
+_UNIQUE on:: login  
+UNIQUE on:: email_
 
+***
 
+## TEXT Files _- main directory_
 
-pull_lists
-----------
-pl_id			PK
-usr_id			FK -- users
-pser_id			FK -- pl_series
-iss_num_start
-variant_ind
-variant_qty
-notes
-status
-
-
-users
------
-usr_id			PK
-login
-first_nm
-last_nm
-email
-email_sts
-password
-last_login_dt
-acct_sts
-role
-twitter
-facebook
-bio
-phone_home
-phone_mobile
-phone_work
-address_1
-address_2
-city
-state
-zip
-county
-country
-sec_question
-sec_answer
-pull_list_sts
-resume_dt
-pull_list_notes
-UNIQUE on:: login
-UNIQUE on:: email
-
-
-
-
-
-
--------------------------------------------------
-TEXT Files - main directory
--------------------------------------------------
 dates.txt
 ---------
 a PHP script (with out the <?php & ?> tags) with an array litteral 
