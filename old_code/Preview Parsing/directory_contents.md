@@ -56,6 +56,7 @@ looks like this code is for proto-typing the parsing of the solicitation text
 it reads the sol_text field from the previews_raw table.
 
 It then parses it and populates various fields and prints its output to STDOUT
+
 1. title
 1. issue_num
 1. total_issues
@@ -78,7 +79,8 @@ This program reads the previews_lines table _(by pvh_id)_ and splits it into fie
 delimited)_. It sets the sol_text to `[ndx-2]` _(aka the 3rd field)_ without any processing or 
 parsing. It then performs minor parsing to populate the other fields.
 
-`select pvh_id from previews_hdr where proc_status in ('NEW', 'REPROCESS') order by period_dt
+~~~~~~~~~~~~~~~~~~~~~~~
+select pvh_id from previews_hdr where proc_status in ('NEW', 'REPROCESS') order by period_dt
 for each pvh_id
   select pvl_id, pvl_seq, line_text, override_pvhl_id from previews_lines where pvh_id = ? order by pvl_seq
   for each line
@@ -100,7 +102,8 @@ for each pvh_id
   		- release_dt
   		- unit_price
   		- pi_ind
-`
+~~~~~~~~~~~~~~~~~~~~~~~
+
 
 str2dt.php
 -----
