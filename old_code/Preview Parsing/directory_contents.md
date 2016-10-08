@@ -14,10 +14,11 @@
 ## Most useful looking scripts/tables/files:
 
 * excel spreadsheet: `headings.xlsx`  
-* script: `lf.PHP`
-* script: `pp.PHP` -- see output file: pp_out.txt
-* script: `tt.php` -- see output file: tt_out.txt  
-* file: `bipolar_2014_08_16.sql`
+* text file: solicitations text codes.txt  
+* PHP script: `lf.PHP`
+* PHP script: `pp.PHP` -- see output file: pp_out.txt
+* PHP script: `tt.php` -- see output file: tt_out.txt  
+* SQL script: `bipolar_2014_08_16.sql`
     * table: previews_hdg_lvls
     * table: previews_raw
     * table: previews_lines
@@ -136,13 +137,11 @@ Containing Table Structures and data for the following tables:
 
 * code_hdr
 * code_values
-* code_attribs  
-  
+* code_attribs
 * users
 * pull_lists
 * pl_series
-* pl_publishers  
-  
+* pl_publishers
 * previews_hdg_lvls
 * previews_hdr
 * previews_lines
@@ -273,7 +272,9 @@ What is override_pvhl_id and how is it used?
     102,774		ITEM			if the sol_code is populated, its an ITEM
         799		BLANK			sol_code & pv_vale are both blank
      23,017		PAGE			sol_code is blank and pv_value = PAGE
-    	 52		IDENT			if the solicitation code is blank and the value matches the reglare expression for the identificaiton line, then it is a identification line
+    	 52		IDENT			if the solicitation code is blank and the value matches the 
+                           reglare expression for the identificaiton line, then it is a 
+                           identification line
       1,135		H3				if none of the above and if lvl 2 is set - check for lvl 3
       8,864		H2				if none of the above and if lvl 1 or 2 is set - check for lvl 2
         702		H1				if none of the above - check for lvl 2
@@ -317,7 +318,7 @@ What is override_pvhl_id and how is it used?
 * sec_answer
 * pull_list_sts
 * resume_dt
-* pull_list_notes. 
+* pull_list_notes  
 _UNIQUE on:: login  
 UNIQUE on:: email_
 
@@ -325,285 +326,266 @@ UNIQUE on:: email_
 
 ## TEXT Files _- main directory_
 
-dates.txt
----------
-a PHP script (with out the <?php & ?> tags) with an array litteral 
-that contains the COF text file names (without .txt suffix)
-
-pp_out.txt
-----------
-appears to be a print out of the "PREVIEWS JAN VOL 19 #01" COF text File
-with each line read in, then split into an array & printed out with a line counter 
-printed before the array Contents
-
-lines have either: 1 or 7 elements
--- for lines with 7 elements:
-. appears to be the contents of each column from the COF
-. the last element is either blank or `=$`
-
-solicitations text codes.txt
-----------------------------
+### solicitations text codes.txt
 appears to be some notes and examples on parsing the details of the COF
 
-tt_out.txt
-----------
+### dates.txt
+a PHP script (with out the <?php & ?> tags) with an array litteral  
+that contains the COF text file names (without .txt suffix)
+
+### pp_out.txt
+appears to be a print out of the "PREVIEWS JAN VOL 19 #01" COF text File. 
+with each line read in, then split into an array & printed out with a line counter  
+printed before the array Contents
+
+lines have either: 1 or 7 elements. 
+for lines with 7 elements:  
+appears to be the contents of each column from the COF  
+the last element is either blank or `=$`
+
+### tt_out.txt
 appears to be a tab delimited file with the columns from the NOV09_COF.txt file?
 
+***
 
+## COF Text Files _- main directory_
 
--------------------------------------------------
-COF Text Files - main directory
--------------------------------------------------
-with the exception of the 1 file below, the other COF file names match the ones in the 
+with the exception of the 1 file below, the other COF file names match the ones in the   
 `Archive.zip` file and in the `originals/Archive 2` directory.
 
 AUG14_COF.txt
 
+***
 
+## Excel workbooks _- main directory_
 
--------------------------------------------------
-Excel workbooks - main directory
--------------------------------------------------
-headings.xlsx
--------------
+### headings.xlsx
+
 This is a listing (from what?) of all the headings within a COF. There are up to 
 3 levels of headings. 
 
-Heading of interest are: 
+**Heading of interest are: **
 
-COMICS
-With level 2 headings of the various publishers. Some of the publishers under 
+#### COMICS
+With level 2 headings of the various publishers. Some of the publishers under  
 the Comics level 1 heading, have additional level 3 sub-headings.
 
-PREMIER PUBLISHERS
-with 1 or 2 level 2 headings per publisher. Most if not all Premier publishers will
+#### PREMIER PUBLISHERS
+with 1 or 2 level 2 headings per publisher. Most if not all Premier publishers will  
 have multiple level 3 sub-Heading.
 
-PREVIEWS PUBLICATIONS ???
-- contains info on stuff that Black Diamond publishes.
+#### PREVIEWS PUBLICATIONS ???
+contains info on stuff that Black Diamond publishes.
 
 
-titles and token parsing.xlsx
------------------------------
+### titles and token parsing.xlsx
+
 looks to be extracts used parsing analysis
 
-row count: 26,365
+row count: 26,365  
 columns:
-test	
-title	
-issue	
-of_num	
-printing	
-caution	
-advisory	
-sol info	
-other	
-variants	
-prev sol	
-sub title	
-x9
+- test
+- title
+- issue
+- of_num
+- printing
+- caution
+- advisory
+- sol info
+- other
+- variants
+- prev sol
+- sub title
+- x9
 
-~$titles and token parsing.xlsx
--------------------------------
-appears to be a working file for excel.
-removing from GitHub repo
+### ~$titles and token parsing.xlsx
 
+appears to be a working file for excel.  
+_removing from GitHub repo_
 
--------------------------------------------------
-Archive.zip - main directory
--------------------------------------------------
-contains 52 items
+***
 
-JAN09_COF.txt
-FEB09_COF.txt
-MAR09_COF.txt
-APR09_COF.txt
-MAY09_COF.txt
-JUN09_COF.txt
-JUL09_COF.txt
-AUG09_COF.txt
-SEP09_COF.txt
-OCT09_COF.txt
-NOV09_COF.txt
-DEC09_COF.txt
+## Archive.zip _- main directory_
 
-JAN10_COF.txt
-FEB10_COF.txt
-MAR10_COF.txt
-APR10_COF.txt
-MAY10_COF.txt
-JUN10_COF.txt
-JUL10_COF.txt
-AUG10_COF.txt
-SEP10_COF.txt
-OCT10_COF.txt
-NOV10_COF.txt
-DEC10_COF.txt
+_contains 52 items_
 
-JAN11_COF.txt
-FEB11_COF.txt
-MAR11_COF.txt
-APR11_COF.txt
-MAY11_COF.txt
-JUN11_COF.txt
-JUL11_COF.txt
-AUG11_COF.txt
-SEP11_COF.txt
-OCT11_COF.txt
-NOV11_COF.txt
-DEC11_COF.txt
+JAN09_COF.txt  
+FEB09_COF.txt  
+MAR09_COF.txt  
+APR09_COF.txt  
+MAY09_COF.txt  
+JUN09_COF.txt  
+JUL09_COF.txt  
+AUG09_COF.txt  
+SEP09_COF.txt  
+OCT09_COF.txt  
+NOV09_COF.txt  
+DEC09_COF.txt  
+  
+JAN10_COF.txt  
+FEB10_COF.txt  
+MAR10_COF.txt  
+APR10_COF.txt  
+MAY10_COF.txt  
+JUN10_COF.txt  
+JUL10_COF.txt  
+AUG10_COF.txt  
+SEP10_COF.txt  
+OCT10_COF.txt  
+NOV10_COF.txt  
+DEC10_COF.txt  
+  
+JAN11_COF.txt  
+FEB11_COF.txt  
+MAR11_COF.txt  
+APR11_COF.txt  
+MAY11_COF.txt  
+JUN11_COF.txt  
+JUL11_COF.txt  
+AUG11_COF.txt  
+SEP11_COF.txt  
+OCT11_COF.txt  
+NOV11_COF.txt  
+DEC11_COF.txt  
+  
+JAN12_COF.txt  
+FEB12_COF.txt  
+MAR12_COF.txt  
+APR12_COF.txt  
+MAY12_COF.txt  
+JUN12_COF.txt  
+JUL12_COF.txt  
+AUG12_COF.txt  
+SEP12_COF.txt  
+OCT12_COF.txt  
+NOV12_COF.txt  
+DEC12_COF.txt  
+  
+JAN13_COF.txt  
+FEB13_COF.txt  
+MAR13_COF.txt  
+APR13_COF.txt  
 
-JAN12_COF.txt
-FEB12_COF.txt
-MAR12_COF.txt
-APR12_COF.txt
-MAY12_COF.txt
-JUN12_COF.txt
-JUL12_COF.txt
-AUG12_COF.txt
-SEP12_COF.txt
-OCT12_COF.txt
-NOV12_COF.txt
-DEC12_COF.txt
+## folder:: originals _- main directory_
 
-JAN13_COF.txt
-FEB13_COF.txt
-MAR13_COF.txt
-APR13_COF.txt
+_contains the following items:_
 
-
-
--------------------------------------------------
-folder:: originals - main directory
--------------------------------------------------
-contains the following items:
-
-a folder named `Archive 2`
-a zip file named `Archive 2.zip`
+a folder named `Archive 2`  
+a zip file named `Archive 2.zip`  
 a text file named `AUG14_COF.txt`
 
-the contents of the folder & zip file look to be the same as Archive.zip in the main directory
+the contents of the folder & zip file look to be the same as Archive.zip in the main directory  
 the `AUG14_COF.txt` should be moved into the `Archive 2` directory
 
 
+## folder:: pdf _- main directory_
 
--------------------------------------------------
-folder:: pdf - main directory
--------------------------------------------------
-contains 39 items
-missing most of 2011 and last 2 month of 2012
+_contains 39 items  
+missing most of 2011 and last 2 month of 2012_
 
-JAN09_COF.pdf
-FEB09_COF.pdf
-MAR09_COF.pdf
-APR09_COF.pdf
-MAY09_COF.pdf
-JUN09_COF.pdf
-JUL09_COF.pdf
-AUG09_COF.pdf
-SEP09_COF.pdf
-OCT09_COF.pdf
-NOV09_COF.pdf
-DEC09_COF.pdf
-
-JAN10_COF.pdf
-FEB10_COF.pdf
-MAR10_COF.pdf
-APR10_COF.pdf
-MAY10_COF.pdf
-JUN10_COF.pdf
-JUL10_COF.pdf
-AUG10_COF.pdf
-SEP10_COF.pdf
-OCT10_COF.pdf
-NOV10_COF.pdf
-DEC10_COF.pdf
-
-SEP11_COF.pdf
-
-JAN12_COF.pdf
-FEB12_COF.pdf
-MAR12_COF.pdf
-APR12_COF.pdf
-MAY12_COF.pdf
-JUN12_COF.pdf
-JUL12_COF.pdf
-AUG12_COF.pdf
-SEP12_COF.pdf
-OCT12_COF.pdf
-
-JAN13_COF.pdf
-FEB13_COF.pdf
-APR13_COF.pdf
-MAR13_COF.pdf
+JAN09_COF.pdf  
+FEB09_COF.pdf  
+MAR09_COF.pdf  
+APR09_COF.pdf  
+MAY09_COF.pdf  
+JUN09_COF.pdf  
+JUL09_COF.pdf  
+AUG09_COF.pdf  
+SEP09_COF.pdf  
+OCT09_COF.pdf  
+NOV09_COF.pdf  
+DEC09_COF.pdf  
+  
+JAN10_COF.pdf  
+FEB10_COF.pdf  
+MAR10_COF.pdf  
+APR10_COF.pdf  
+MAY10_COF.pdf  
+JUN10_COF.pdf  
+JUL10_COF.pdf  
+AUG10_COF.pdf  
+SEP10_COF.pdf  
+OCT10_COF.pdf  
+NOV10_COF.pdf  
+DEC10_COF.pdf  
+  
+SEP11_COF.pdf  
+  
+JAN12_COF.pdf  
+FEB12_COF.pdf  
+MAR12_COF.pdf  
+APR12_COF.pdf  
+MAY12_COF.pdf  
+JUN12_COF.pdf  
+JUL12_COF.pdf  
+AUG12_COF.pdf  
+SEP12_COF.pdf  
+OCT12_COF.pdf  
+  
+JAN13_COF.pdf  
+FEB13_COF.pdf  
+APR13_COF.pdf  
+MAR13_COF.pdf  
 
 
--------------------------------------------------
-folder:: temp - main directory
--------------------------------------------------
-contains 2 excel workbooks
-looks to be extracts used to resolve parsing issues ???
+## folder:: temp _- main directory_
 
-Workbook6.xlsx
---------------
-row count: 400
+_contains 2 excel workbooks  
+looks to be extracts used to resolve parsing issues ???_
+
+### Workbook6.xlsx
+row count: 400. 
 columns:
-pv_source	
-sol_text
+- pv_source	
+- sol_text
 
-Workbook2.xlsx
---------------
-row count: 24,061
+### Workbook2.xlsx
+row count: 24,061. 
 columns:
-test	
-title	
-issue	
-of_num	
-printing	
-caution	
-advisory	
-sol info	
-other	
-variants	
-prev sol	
-sub title
+- test	
+- title	
+- issue	
+- of_num	
+- printing	
+- caution	
+- advisory	
+- sol info	
+- other	
+- variants	
+- prev sol	
+- sub title
 
 
+## folder:: test _- main directory_
 
--------------------------------------------------
-folder:: test - main directory
--------------------------------------------------
-contains 1 excel workbook
-looks to be extracts used to resolve parsing issues ???
+_contains 1 excel workbook  
+looks to be extracts used to resolve parsing issues ???_
 
-test1.xlsx
-----------
-row count: 24,328
+### test1.xlsx
+row count: 24,328. 
 columns:
-sol text	
-title	
-num	
-tot iss	
-ttl type	
-printing	
-caution	
-advisor	
-sol info	
-other desg	
-variant	
-prev sol	
-other	
-x1	
-x2	
-x3
+- sol text	
+- title	
+- num	
+- tot iss	
+- ttl type	
+- printing	
+- caution	
+- advisor	
+- sol info	
+- other desg	
+- variant	
+- prev sol	
+- other	
+- x1	
+- x2	
+- x3
 
 
+## folder:: yyyy-mm_links _- main directory_
 
--------------------------------------------------
-folder:: yyyy-mm_links - main directory
--------------------------------------------------
-This folder previously held a set of symbolic links back to the originals folder
+_This folder previously held a set of symbolic links back to the originals folder  
 the links were renamed to be formated as Year Month Day, for easy sorting
 
-however, when this folder was checked into GitHub, the links became non-functioning
-hence removing these from GitHub repo
+however, when this folder was checked into GitHub, the links became non-functioning  
+hence removing these from GitHub repo_
