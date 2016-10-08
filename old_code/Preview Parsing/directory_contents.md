@@ -56,7 +56,6 @@ looks like this code is for proto-typing the parsing of the solicitation text
 it reads the sol_text field from the previews_raw table.
 
 It then parses it and populates various fields and prints its output to STDOUT
-
 1. title
 1. issue_num
 1. total_issues
@@ -76,8 +75,12 @@ It then parses it and populates various fields and prints its output to STDOUT
 _see output file: pp_out.txt_
 
 This program reads the previews_lines table _(by pvh_id)_ and splits it into fields _(tab 
-delimited)_. It sets the sol_text to `[ndx-2]` _(aka the 3rd field)_ without any processing or 
-parsing. It then performs minor parsing to populate the other fields.
+delimited)_.
+
+It sets the sol_text to `[ndx-2]` _(aka the 3rd field)_ without any processing or 
+parsing.
+
+It then performs minor parsing to populate the other fields.
 
 ~~~~~~~~~~~~~~~~~~~~~~~
 select pvh_id from previews_hdr where proc_status in ('NEW', 'REPROCESS') order by period_dt
@@ -105,28 +108,23 @@ for each pvh_id
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 
-str2dt.php
------
-looks like some isolated code that was being developed and tested...
-
+### str2dt.php
+looks like some isolated code that was being developed and tested...  
 takes a string and attempts to convert it to a date
 
 
-dates.php
------
-looks like some isolated code that was being developed and tested...
-
-processes a PHP array litteral that contains the COF text file names (without .txt suffix)
-for each item, it converts it to a date (fmt: Y-m-d) and stores it in an array
-sorts the array by key, and prints it out
+### dates.php
+looks like some isolated code that was being developed and tested...  
+processes a PHP array litteral that contains the COF text file names (without .txt suffix). 
+for each item, it converts it to a date (fmt: Y-m-d) and stores it in an array. 
+sorts the array by key, and prints it out. 
 
 
-t.php
------
-looks like some isolated code that was being developed and tested...
-the code is using the mysqli MySQL db interface to execute some sql that contains place holders
-I think, I was trying to figure out how to use the mysqli MySQL db interface
-place holders replaced with escaped values
+### t.php
+looks like some isolated code that was being developed and tested...  
+the code is using the mysqli MySQL db interface to execute some sql that contains place holders. 
+I think, I was trying to figure out how to use the mysqli MySQL db interface. 
+place holders replaced with escaped values. 
 
 
 
