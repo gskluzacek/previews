@@ -38,53 +38,47 @@ contains a single function named `crtsql()` which will take an input sql string 
 holders and return a SQL statement with the 
 
 
-lf.php
------
+### lf.php
 reads all the COF files and loads them into the database
 
-loads the folloing tables:
-- previews_hdr   (period_dt, period_str, ident_str, local_file, url_to_cof) 
-- previews_lines (pvh_id, pvl_seq, line_text)
+**loads the folloing tables:**
+* reviews_hdr   (period_dt, period_str, ident_str, local_file, url_to_cof) 
+* previews_lines (pvh_id, pvl_seq, line_text)
 
-one line of text (unaltered) from the COF file is inserted per record into the line_text column.
+one line of text _(unaltered)_ from the COF file is inserted per record into the line_text column.
 
 
-
-tt.php
------
-see output file: tt_out.txt
+### tt.php
+_see output file: tt_out.txt_
 
 looks like this code is for proto-typing the parsing of the solicitation text
 
 it reads the sol_text field from the previews_raw table.
 
 It then parses it and populates various fields and prints its output to STDOUT
-------------
-title
-issue_num
-total_issues
-title_type
-printing
-caution_code
-advisory_code
-sol_info_code
-other_designations
-cover_variant
-prev_sol_code
-packaged_set
-other_tokens
+1. title
+1. issue_num
+1. total_issues
+1. title_type
+1. printing
+1. caution_code
+1. advisory_code
+1. sol_info_code
+1. other_designations
+1. cover_variant
+1. prev_sol_code
+1. packaged_set
+1. other_tokens
 
 
+### pp.php
+_see output file: pp_out.txt_
 
-pp.php
------
-see output file: pp_out.txt
-
-This program reads the previews_lines table (by pvh_id) and splits it into fields (tab 
-delimited). It sets the sol_text to [ndx-2] (aka the 3rd field) without any processing or 
+This program reads the previews_lines table _(by pvh_id)_ and splits it into fields _(tab 
+delimited)_. It sets the sol_text to `[ndx-2]` _(aka the 3rd field)_ without any processing or 
 parsing. It then performs minor parsing to populate the other fields.
 
-select pvh_id from previews_hdr where proc_status in ('NEW', 'REPROCESS') order by period_dt
+`select pvh_id from previews_hdr where proc_status in ('NEW', 'REPROCESS') order by period_dt
 for each pvh_id
   select pvl_id, pvl_seq, line_text, override_pvhl_id from previews_lines where pvh_id = ? order by pvl_seq
   for each line
@@ -106,7 +100,7 @@ for each pvh_id
   		- release_dt
   		- unit_price
   		- pi_ind
-
+`
 
 str2dt.php
 -----
