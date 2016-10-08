@@ -25,7 +25,7 @@
 
 ***
 
-## PHP source code - main directory
+## PHP source code _- main directory_
 
 **Most interesting PHP scripts**
 * lf.PHP
@@ -126,171 +126,153 @@ the code is using the mysqli MySQL db interface to execute some sql that contain
 I think, I was trying to figure out how to use the mysqli MySQL db interface. 
 place holders replaced with escaped values. 
 
+***
 
+## SQL Files _- main directory_
 
+### **file:** `bipolar_2014_08_16.sql`
 
--------------------------------------------------
-SQL Files - main directory
--------------------------------------------------
-file: `bipolar_2014_08_16.sql`
+This is a dump of a MySQL database.  
+Containing Table Structures and data for the following tables:
 
-This is a dump of a MySQL database.
-Containing Table Structures and data for:
+### tables
 
-note: PL stands for pull list
+* code_hdr
+* code_values
+* code_attribs
 
+* users
+* pull_lists
+* pl_series
+* pl_publishers
 
-tables
-------
-code_hdr
-code_values
-code_attribs
+* previews_hdg_lvls
+* previews_hdr
+* previews_lines
+* previews_raw
 
-users
-pull_lists
-pl_series
-pl_publishers
-
-previews_hdg_lvls
-previews_hdr
-previews_lines
-previews_raw
-
-
+_**Note:**_
+PL stands for pull list
 
 all tables except as noted have the following columns
------------------------------------------------------
-crt_dt
-crt_id
-updt_dt (*)
-updt_id
 
+* crt_dt
+* crt_id
+* updt_dt (*)
+* updt_id
 
+## Most interesting tables
+* previews_hdg_lvls
+* previews_raw
+* previews_lines
+* previews_hdr
 
-Most interesting tables
------------------------
-previews_hdg_lvls
-previews_raw
-previews_lines
-previews_hdr
+### code_attribs
+* ca_id			PK
+* cv_id			FK -- code_values
+* attrib_name
+* attrib_value
 
+### code_hdr
+* ch_id			PK
+* code_type
+* code_desc
 
-code_attribs
-------------
-ca_id			PK
-cv_id			FK -- code_values
-attrib_name
-attrib_value
+### code_values
+* cv_id			PK
+* ch_id			FK -- code_hdr
+* code_grp
+* code_key
+* code_val
 
-code_hdr
---------
-ch_id			PK
-code_type
-code_desc
+### pl_publishers
+* ppub_id			PK
+* pub_abrev
+* pub_short_name
+* pub_long_name
+_UNIQUE on:: pub_abrev, pub_short_name_
 
-code_values
------------
-cv_id			PK
-ch_id			FK -- code_hdr
-code_grp
-code_key
-code_val
+### pl_series
+* pser_id			PK
+* ppub_id			FK -- pl_publishers
+* ser_display_name
+* ser_sort_name
+* ser_year
+* indicia_name
+* ser_group
+* ser_url
 
-pl_publishers
--------------
-ppub_id			PK
-pub_abrev
-pub_short_name
-pub_long_name
-UNIQUE on:: pub_abrev, pub_short_name
-
-pl_series
----------
-pser_id			PK
-ppub_id			FK -- pl_publishers
-ser_display_name
-ser_sort_name
-ser_year
-indicia_name
-ser_group
-ser_url
-
-previews_hdg_lvls *
------------------
-pvhl_id			PK
-pvhl_level
-parent_pvhl_id	FK -- previews_hdg_lvls
-pull_list_ind
-heading_name
-UNIQUE on:: parent_pvhl_id, heading_name
+### previews_hdg_lvls *
+* pvhl_id			PK
+* pvhl_level
+* parent_pvhl_id	FK -- previews_hdg_lvls
+* pull_list_ind
+* heading_name
+_UNIQUE on:: parent_pvhl_id, heading_name_
 
 What is pull_list_ind and how is it used?
 
-previews_hdr *
-------------
-pvh_id			PK
-period_dt
-period_str
-ident_str
-local_file
-url_to_cof
-proc_status
+### previews_hdr *
+* pvh_id			PK
+* period_dt
+* period_str
+* ident_str
+* local_file
+* url_to_cof
+* proc_status
 
-a table of when each COF file was processed
+_a table of when each COF file was processed_
 
 
-previews_lines *
---------------
-pvl_id			PK
-pvh_id			FK -- previews_hdr
-pvl_seq
-line_text
-override_pvhl_id		if set and is not 0, then use revers heading lookup (??? need more info on what this is)
-UNIQUE on:: pvh_id, pvl_seq
+### previews_lines *
+* pvl_id			PK
+* pvh_id			FK -- previews_hdr
+* pvl_seq
+* line_text
+* override_pvhl_id		if set and is not 0, then use revers heading lookup (??? need more info on what this is)
+_UNIQUE on:: pvh_id, pvl_seq_
 
 What is override_pvhl_id and how is it used?
 
-previews_raw *
-------------
-pvr_id			PK
-pvh_id			FK -- previews_hdr (redundent)
-pv_seq				incremented for each line processed`
-pvl_id			FK -- previews_lines
-pv_type				* see below
-pv_value			[ndx-0]
-h1_pvhl_id		FK -- previews_hdg_lvls		heading lookup on pv_value
-h2_pvhl_id		FK -- previews_hdg_lvls		heading lookup on pv_value
-h3_pvhl_id		FK -- previews_hdg_lvls		heading lookup on pv_value
-pv_source			heading 1 / heading 2 / heading 3
-sol_page			* pv_value
-sol_code			[ndx-1] non-blank for ITEM pv_type(s), blank for all other pv_type(s)
-sol_text			[ndx-2]
-release_dt			[ndx-3]
-unit_price			[ndx-4] unit_price & pi_ind are mutually exclusive. Unit price should have a leading 'SRP' or 'MSRP' unit price type
-pi_ind				'please inquire (on price)' indicator - can be NULL, Y or E (invalid unit price type)
-title
-sub_title
-title_vol
-title_type
-title_status
-title_designations
-book_type
-book_vol
-book_designations
-issue_num
-total_issues
-printing
-cover_variant
-cover_type
-advisory_code
-caution_code
-sol_info_codes
-prev_sol_code
-edition
-other_designations
+### previews_raw *
+* pvr_id			PK
+* pvh_id			FK -- previews_hdr (redundent)
+* pv_seq				incremented for each line processed`
+* pvl_id			FK -- previews_lines
+* pv_type				* see below
+* pv_value			[ndx-0]
+* h1_pvhl_id		FK -- previews_hdg_lvls		heading lookup on pv_value
+* h2_pvhl_id		FK -- previews_hdg_lvls		heading lookup on pv_value
+* h3_pvhl_id		FK -- previews_hdg_lvls		heading lookup on pv_value
+* pv_source			heading 1 / heading 2 / heading 3
+* sol_page			* pv_value
+* sol_code			[ndx-1] non-blank for ITEM pv_type(s), blank for all other pv_type(s)
+* sol_text			[ndx-2]
+* release_dt			[ndx-3]
+* unit_price			[ndx-4] unit_price & pi_ind are mutually exclusive. Unit price should have a leading 'SRP' or 'MSRP' unit * price type
+* pi_ind				'please inquire (on price)' indicator - can be NULL, Y or E (invalid unit price type)
+* title
+* sub_title
+* title_vol
+* title_type
+* title_status
+* title_designations
+* book_type
+* book_vol
+* book_designations
+* issue_num
+* total_issues
+* printing
+* cover_variant
+* cover_type
+* advisory_code
+* caution_code
+* sol_info_codes
+* prev_sol_code
+* edition
+* other_designations
 
-pv_type(s)
-~~~~~~~~~~~~~~~~~~~~~~~
+#### pv_type(s)
 102,774		ITEM			if the sol_code is populated, its an ITEM
     799		BLANK			sol_code & pv_vale are both blank
  23,017		PAGE			sol_code is blank and pv_value = PAGE
