@@ -27,7 +27,7 @@ class Publisher(models.Model):
     valid_from = models.DateField()     # date that the record is effective, can be a past or futrue date
     valid_to = models.DateField()       # date that the record is expired, can be a past or future date, but must be greater than valid_from date
     trans_rcdd = models.DateTimeField(default=timezone.now)     # date-time the transaction was recorded, `in practice`, this should be the current date-time, so it cannot be in the future. but obviously, it can be less than the current date-time for transacitons recorded in the past
-    trans_spsd = models.DateTimeField()                         # date-time the transaction was superseded (i.e., `updated` data was inserted, replcacing the previous data), must be greater than the trans_rcdd date-time
+    trans_spsd = models.DateTimeField()                         # date-time the transaction was superseded (i.e., `updated` data was inserted, replacing the previous data), must be greater than the trans_rcdd date-time
     
     class Meta:
         unique_together = (("pub_key","valid_from","trans_rcdd"),)

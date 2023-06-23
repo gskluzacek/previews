@@ -3,6 +3,16 @@ from lxml import html
 from lxml import etree
 import re
 
+"""
+##############################################################################################################
+
+NOTE: while it looks like comicbookdb.com is still a registered domain nmae, it appears that the web site
+        is no longer being hosted.
+
+##############################################################################################################
+
+"""
+
 url = "http://www.comicbookdb.com/title.php?ID=38270"
 
 page = requests.get(url)
